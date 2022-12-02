@@ -23,12 +23,12 @@ public:
 
 };
 
-void checkIfAdult (int input) {
+void Media::checkIfAdult (int input) {
     // If the adult column is 1, don't read in input.
     // Otherwise, read in the input.
 }
 
-void PrintMenu() {
+void Media::PrintMenu() {
 
     cout << "Welcome to IMDGetter!" << endl;
     cout << "_____________________" << endl;
