@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-class IMDGetter {
+class Media {
 
 public:
 
