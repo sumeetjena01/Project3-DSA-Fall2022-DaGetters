@@ -32,8 +32,11 @@ public:
 
 private:
 
-    unordered_set<std::string> filterTypes = {"year", "genre", "runtime"}; // What is this for? 
+    unordered_set<std::string> filterTypes = {"year", "genre", "runtime"}; // What is this for? - Sumeet 
     unordered_set<std::string> sortTypes = {"title", "type", "year", "runTime"}; //Use these to validate input with find() or count()?
+    // We don't sort by type, right? We only need to sort by title (alphabetically), or year and runTime (numerically) - Sumeet
+    // The first question the user asks already filters out the type they're looking for, which I handled by putting into a vector. - Sumeet
+    // After that, the user is only trying to sort between those 3 things, title, year, and runtime. 
 
 };
 
@@ -96,7 +99,7 @@ Media* Media::CreateMediaData(string line) {
         mediaData->primaryTitle = primaryTitle;
         mediaData->startYear = startYear;
         mediaData->endYear = endYear;
-        // mediaData->runtime = runtime; *Have to fix.* 
+        // mediaData->runtime = runtime; *Have to fix.* - Sumeet 
 
     }
     return mediaData;
@@ -124,7 +127,7 @@ void Media::PrintMenu() {
     // But, within that function, if the movie has a 1 in the adult column, do not read that into the vector.
 
     cout << "What would you like to sort by?" << endl;
-    cout << "1. Title" << endl;
+    cout << "1. Title" << endl; // Alphabetical
     cout << "2. Release Year" << endl;
     cout << "3. Runtime" << endl;
     int sortInput;
