@@ -73,10 +73,10 @@ Media* Media::CreateMediaData(string line) {
         string tConst;
         getline(sStream, tConst, '\t');
 
-        string titleType;
+        string titleType; // Whether it's a movie, short, documentary, or TV show. 
         getline(sStream, titleType, '\t');
 
-        string primaryTitle;
+        string primaryTitle; // The ACTUAL title of the media, such as "Top Gun". 
         getline(sStream, primaryTitle, '\t');
 
         string startYear;
