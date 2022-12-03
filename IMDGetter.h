@@ -2,6 +2,7 @@
 #define PROJECT3AMENU_IMDGETTER_H
 #endif //PROJECT3AMENU_IMDGETTER_H
 #include <iostream>
+#include <unordered_set>
 using namespace std;
 
 class Media {
@@ -20,6 +21,10 @@ public:
     // Functions
     void checkIfAdult(int input);
     void PrintMenu();
+
+private:
+    std::unordered_set<std::string> filterTypes = {"year", "genre", "runtime"};
+    std::unordered_set<std::string> sortTypes = {"title", "type", "year", "runTime"}; //use these to validate input with find() or count()?
 
 };
 
