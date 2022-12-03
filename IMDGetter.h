@@ -32,7 +32,7 @@ public:
 
 private:
 
-    unordered_set<std::string> filterTypes = {"year", "genre", "runtime"};
+    unordered_set<std::string> filterTypes = {"year", "genre", "runtime"}; // What is this for? 
     unordered_set<std::string> sortTypes = {"title", "type", "year", "runTime"}; //Use these to validate input with find() or count()?
 
 };
