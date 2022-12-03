@@ -22,6 +22,10 @@ public:
     string endYear;
     string genre;
     int runtime;
+    vector<Media*> movieVector;
+    vector<Media*> showVector;
+    vector<Media*> documentaryVector;
+    vector<Media*> shortVector;
 
     // Functions
     void checkIfAdult(int input);
@@ -32,11 +36,11 @@ public:
 
 private:
 
-    unordered_set<std::string> filterTypes = {"year", "genre", "runtime"}; // What is this for? - Sumeet 
-    unordered_set<std::string> sortTypes = {"title", "type", "year", "runTime"}; //Use these to validate input with find() or count()?
-    // We don't sort by type, right? We only need to sort by title (alphabetically), or year and runTime (numerically) - Sumeet
-    // The first question the user asks already filters out the type they're looking for, which I handled by putting into a vector. - Sumeet
-    // After that, the user is only trying to sort between those 3 things, title, year, and runtime. 
+    unordered_set<std::string> filterTypes = {"year", "genre", "runtime"}; // What is this for? - Sumeet
+    unordered_set<std::string> sortTypes = {"title", "type", "year", "runTime"}; // Use these to validate input with find() or count()?
+    // We don't sort by type, right? We only need to sort by title (alphabetically), or year and runTime (numerically). - Sumeet
+    // The first question the user asks already filters out the type they're looking for. - Sumeet
+    // After that, the user is only trying to sort between those 3 things, title, year, and runtime. - Sumeet
 
 };
 
@@ -44,8 +48,6 @@ void Media::checkIfAdult (int input) {
     // If the adult column is 1, don't read in input.
     // Otherwise, read in the input.
 }
-
-// After that^ is done, pass the data into a vector, to be sorted later.
 
 bool Media::LoadTSVFile(string filename, vector<Media*> &list) {
 
@@ -76,10 +78,10 @@ Media* Media::CreateMediaData(string line) {
         string tConst;
         getline(sStream, tConst, '\t');
 
-        string titleType; // Whether it's a movie, short, documentary, or TV show. 
+        string titleType; // Whether it's a movie, short, documentary, or TV show.
         getline(sStream, titleType, '\t');
 
-        string primaryTitle; // The ACTUAL title of the media, such as "Top Gun". 
+        string primaryTitle; // The ACTUAL title of the media, such as "Top Gun".
         getline(sStream, primaryTitle, '\t');
 
         string startYear;
@@ -99,13 +101,13 @@ Media* Media::CreateMediaData(string line) {
         mediaData->primaryTitle = primaryTitle;
         mediaData->startYear = startYear;
         mediaData->endYear = endYear;
-        // mediaData->runtime = runtime; *Have to fix.* - Sumeet 
+        // mediaData->runtime = runtime; *Have to fix.*
 
     }
     return mediaData;
 }
 
-void Media::PrintMenu() {
+void Media::PrintMenu() { // When I add Media::, I get an error in main, why? - Sumeet
 
     cout << "Welcome to IMDGetter!" << endl;
     cout << "_____________________" << endl;
@@ -123,8 +125,22 @@ void Media::PrintMenu() {
         cin >> searchInput;
     }
     // When the user selects one of the options, pass all of those options from the .TSV file into a vector.
-    // EX: If the user types in 1, pass all the movies from the .TSV file into a vector to be sorted later.
-    // But, within that function, if the movie has a 1 in the adult column, do not read that into the vector.
+    // EX: If the user types in 1, pass all the movies from the .TSV file into a movie vector to be sorted later.
+    // But, within that function, if the movie has a 1 in the adult column, do not read that into the vector. - Sumeet
+
+    // If they pick 1, meaning they want to see movies, should I sort the vector here? - Sumeet
+    if (searchInput == 1) {
+        LoadTSVFile("title.basics.tsv", movieVector);
+    }
+    else if (searchInput == 2) {
+        LoadTSVFile("title.basics.tsv", showVector);
+    }
+    else if (searchInput == 3) {
+        LoadTSVFile("title.basics.tsv", documentaryVector);
+    }
+    else if (searchInput == 4) {
+        LoadTSVFile("title.basics.tsv", shortVector);
+    }
 
     cout << "What would you like to sort by?" << endl;
     cout << "1. Title" << endl; // Alphabetical
@@ -136,8 +152,6 @@ void Media::PrintMenu() {
         cout << "Please enter a valid input. If needed, refer the menu above. " << endl;
         cin >> sortInput;
     }
-
-    // If they pick 1, meaning they want to see movies, should I sort the vector here?
 
     cout << "How would you like to perform your search?" << endl;
     cout << "1. Quick Sort" << endl;
