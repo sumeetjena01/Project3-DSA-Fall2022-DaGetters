@@ -30,6 +30,18 @@ bool Media::checkIfAdult () {
 
 }
 
+static int convertToInt(string str) {
+
+    int i = 0;
+    try {
+        i = stoi(str);
+    }
+    catch(exception e){
+        i = -1;
+    }
+    return i;
+}
+
 bool IMDBData::LoadTSVFile(string filename) {
 
     ifstream inputFile(filename);
@@ -40,7 +52,7 @@ bool IMDBData::LoadTSVFile(string filename) {
     getline(inputFile, headerLine);
 
     string dataLine;
-    while (inputFile.is_open() && !inputFile.eof()) {
+    while (inputFile.is_open() && !inputFile.eof() && mediaList.size() < 200000) {
         getline(inputFile, dataLine);
         Media* media = CreateMediaData(dataLine);
         mediaList.push_back(media);
@@ -60,7 +72,7 @@ Media* IMDBData::CreateMediaData(string line) {
         string tConst; // Not used.
         getline(sStream, tConst, '\t');
 
-        string titleType; // Whether it's a movie, short, documentary, or TV show.
+        string titleType; // Whether it's a movie, short, TV show, etc.
         getline(sStream, titleType, '\t');
 
         string primaryTitle; // The ACTUAL title of the media, such as "Top Gun".
@@ -71,12 +83,18 @@ Media* IMDBData::CreateMediaData(string line) {
 
         string adultRating;
         getline(sStream, adultRating, '\t');
-        int adult = stoi(adultRating);
+        int adult = convertToInt(adultRating);
         bool isAdult = (adult == 1);
 
+        int intStartYear = -1;
         string startYear;
         getline(sStream, startYear, '\t');
-        int intStartYear = stoi(startYear);
+        if (startYear.compare("\\N") == 0) {
+            intStartYear = 0;
+        }
+        else {
+            intStartYear = convertToInt(startYear);
+        }
 
         int intEndYear = -1;
         string endYear; // Not used.
@@ -85,12 +103,18 @@ Media* IMDBData::CreateMediaData(string line) {
             intEndYear = 0;
         }
         else {
-            intEndYear = stoi(endYear);
+            intEndYear = convertToInt(endYear);
         }
 
+        int intRunTime = -1;
         string runtime;
         getline(sStream, runtime, '\t');
-        int intRuntime = stoi(runtime);
+        if(runtime.compare("\\N") == 0) {
+            intRunTime = 0;
+        }
+        else {
+            intRunTime = convertToInt(runtime);
+        }
 
         string genre; // Not used.
         getline(sStream, genre, '\t');
@@ -101,7 +125,7 @@ Media* IMDBData::CreateMediaData(string line) {
         media->isAdult = isAdult;
         media->startYear = intStartYear;
         media->endYear = intEndYear;
-        media->runtime = intRuntime;
+        media->runtime = intRunTime;
         media->genre = genre;
 
     }
@@ -118,7 +142,10 @@ void IMDBData::getMediaType(int searchInput, vector<Media*> &mediaTypeList) {
         searchTitleType = "tvSeries";
     }
     else if (searchInput == 3) {
-        searchTitleType = "short"; // Is documentary is called "short" in the file?
+        searchTitleType = "tvEpisode";
+        // Documentary is a genre, not a media type.
+        // Switch this to TV Episode, so a user can sort individual episodes by highest rating.
+        // "tvEpisode"
     }
     else if (searchInput == 4) {
         searchTitleType = "short";
@@ -145,7 +172,7 @@ void IMDBData::PrintMenu() {
     cout << "What would you like to search for?" << endl;
     cout << "1. Movies" << endl;
     cout << "2. TV Shows" << endl;
-    cout << "3. Documentaries" << endl;
+    cout << "3. TV Episodes" << endl;
     cout << "4. Shorts" << endl;
     int searchInput;
     cin >> searchInput;
@@ -156,20 +183,22 @@ void IMDBData::PrintMenu() {
     // When the user selects one of the options, pass all of all the media types from the .TSV file into a vector.
     // But, within that function, if the movie has a 1 in the adult column, do not read that into the vector.
 
+    vector<Media*> movies;
+    vector<Media*> shows;
+    vector<Media*> episodes;
+    vector<Media*> shorts;
+
     if (searchInput == 1) {
-        vector<Media*> movies;
         getMediaType(searchInput, movies);
     }
     else if (searchInput == 2) {
-        vector<Media*> shows;
         getMediaType(searchInput, shows);
     }
     else if (searchInput == 3) {
-        vector<Media*> documentary;
-        getMediaType(searchInput, documentary); // Double-check for genre in getMediaType (update)
+        getMediaType(searchInput, episodes);
+        // Documentaries are a genre, not a media type, so I had to switch this to TV Episodes.
     }
     else if (searchInput == 4) {
-        vector<Media*> shorts;
         getMediaType(searchInput, shorts);
     }
 
