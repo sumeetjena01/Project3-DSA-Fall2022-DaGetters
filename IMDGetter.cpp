@@ -55,7 +55,7 @@ Media* IMDBData::CreateMediaData(string line) {
     Media* media = new Media();
     stringstream sStream(line);
 
-    while(sStream.good()) {
+    if(sStream.good()) {
 
         string tConst; // Not used.
         getline(sStream, tConst, '\t');
@@ -78,24 +78,31 @@ Media* IMDBData::CreateMediaData(string line) {
         getline(sStream, startYear, '\t');
         int intStartYear = stoi(startYear);
 
+        int intEndYear = -1;
         string endYear; // Not used.
         getline(sStream, endYear, '\t');
-        int intEndYear = stoi(endYear);
+        if(endYear.compare("\\N") == 0) {
+            intEndYear = 0;
+        }
+        else {
+            intEndYear = stoi(endYear);
+        }
 
         string runtime;
         getline(sStream, runtime, '\t');
-        int realRuntime = stoi(runtime);
+        int intRuntime = stoi(runtime);
 
         string genre; // Not used.
         getline(sStream, genre, '\t');
 
         media->tConst = tConst;
-        media->titleType = stoi(titleType);
+        media->titleType = titleType;
         media->primaryTitle = primaryTitle;
         media->isAdult = isAdult;
-        media->startYear = startYear;
-        media->endYear = endYear;
-        // media->runtime = runtime; *Have to fix this!*
+        media->startYear = intStartYear;
+        media->endYear = intEndYear;
+        media->runtime = intRuntime;
+        media->genre = genre;
 
     }
     return media;
@@ -103,10 +110,28 @@ Media* IMDBData::CreateMediaData(string line) {
 
 void IMDBData::getMediaType(int searchInput, vector<Media*> &mediaTypeList) {
 
+    string searchTitleType = "";
+    if(searchInput == 1) {
+        searchTitleType = "movie";
+    }
+    else if (searchInput == 2) {
+        searchTitleType = "tvSeries";
+    }
+    else if (searchInput == 3) {
+        searchTitleType = "short"; // Is documentary is called "short" in the file?
+    }
+    else if (searchInput == 4) {
+        searchTitleType = "short";
+    }
+    else {
+        return;
+    }
+
     for(int i = 0; i < mediaList.size(); i++) {
-        Media* mediaType = mediaList[i];
-        if(mediaType->titleType == (searchInput)) { // Title Type = Whether it's a movie, show, etc.
-            mediaTypeList.push_back(mediaType);
+        Media* media = mediaList[i];
+        string titleType = media->titleType;
+        if(titleType.compare(searchTitleType) == 0) { // Title Type = Whether it's a movie, show, etc.
+            mediaTypeList.push_back(media);
         }
     }
 }
@@ -141,7 +166,7 @@ void IMDBData::PrintMenu() {
     }
     else if (searchInput == 3) {
         vector<Media*> documentary;
-        getMediaType(searchInput, documentary);
+        getMediaType(searchInput, documentary); // Double-check for genre in getMediaType (update)
     }
     else if (searchInput == 4) {
         vector<Media*> shorts;
