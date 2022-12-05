@@ -203,9 +203,8 @@ void IMDBData::printMenu() {
 
     vector<Media*> allMedia;
     getMediaType(searchInput, allMedia);
-    vector<Media*> allMedia2 = allMedia;
     random_shuffle(allMedia.begin(), allMedia.end());
-    random_shuffle(allMedia2.begin(), allMedia2.end());
+    vector<Media*> allMedia2 = allMedia;
     cout << "What would you like to sort by?" << endl;
     cout << "1. Title" << endl; // Alphabetical
     cout << "2. Release Year" << endl;
