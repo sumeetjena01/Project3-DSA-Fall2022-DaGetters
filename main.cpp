@@ -6,7 +6,7 @@ int main() {
 
     IMDBData imdbGetter; // Object
     imdbGetter.LoadTSVFile("testload.tsv");
-    imdbGetter.PrintMenu();
+    imdbGetter.printMenu();
     return 0;
 }
 

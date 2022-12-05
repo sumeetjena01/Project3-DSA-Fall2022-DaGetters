@@ -165,7 +165,7 @@ void IMDBData::getMediaType(int searchInput, vector<Media*> &mediaTypeList) {
     }
 }
 
-void IMDBData::PrintMenu() {
+void IMDBData::printMenu() {
 
     cout << "Welcome to IMDGetter!" << endl;
     cout << "_____________________" << endl;
