@@ -31,8 +31,8 @@ public:
 
 private:
 
-    unordered_set<std::string> filterTypes = {"year", "genre", "runtime"}; // What is this for? - Sumeet
-    unordered_set<std::string> sortTypes = {"title", "type", "year", "runTime"}; // Use these to validate input with find() or count()?
+    // unordered_set<std::string> filterTypes = {"year", "genre", "runtime"}; // What is this for? - Sumeet
+    // unordered_set<std::string> sortTypes = {"title", "type", "year", "runTime"}; // Use these to validate input with find() or count()?
 
     // We don't sort by type, right? We only need to sort by title (alphabetically), or year and runTime (numerically). - Sumeet
     // The first question the user asks, already filters out the type of media they're looking for.
