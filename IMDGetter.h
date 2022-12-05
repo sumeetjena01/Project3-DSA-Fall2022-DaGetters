@@ -63,4 +63,9 @@ private:
     int partitionRuntime(vector<Media*>& mediaTypeList, int low, int high);
     void quickSortTitle(vector<Media*>& mediaTypeList, int low, int high);
     int partitionTitle(vector<Media*>& mediaTypeList, int low, int high);
+
+    void binaryInsertionSortInt(vector<Media *> &mediaTypeList, bool isYearSorting);
+    int binarySearchInt(vector<Media*>& mediaTypeList, int low, int high, int target, bool isYearSorting);
+    void binaryInsertionSortStr(vector<Media*>& mediaTypeList);
+    int binarySearchStr(vector<Media*>& mediaTypeList, int low, int high, string target);
 };
