@@ -1,0 +1,580 @@
+tconst	titleType	primaryTitle	originalTitle	isAdult	startYear	endYear	runtimeMinutes	genres
+tt0871155	tvEpisode	Episode #5.193	Episode #5.193	0	2006	\N	\N	Documentary
+tt0871156	tvEpisode	Episode dated 15 March 2004	Episode dated 15 March 2004	0	2004	\N	\N	Talk-Show
+tt0871157	tvEpisode	Alyson and Tommy	Alyson and Tommy	0	2005	\N	43	Documentary,Drama
+tt0871158	tvEpisode	Episode #2.1	Episode #2.1	0	2005	\N	\N	Talk-Show
+tt0871159	tvEpisode	Episode #2.2	Episode #2.2	0	2005	\N	\N	Talk-Show
+tt0871160	tvEpisode	Episode #3.1	Episode #3.1	0	2005	\N	\N	Talk-Show
+tt0871161	tvEpisode	Episode #3.10	Episode #3.10	0	2005	\N	\N	Talk-Show
+tt0871162	tvEpisode	Episode #3.11	Episode #3.11	0	2005	\N	\N	Talk-Show
+tt0871163	tvEpisode	Episode #3.12	Episode #3.12	0	2005	\N	\N	Talk-Show
+tt0871164	tvEpisode	Episode #3.13	Episode #3.13	0	2005	\N	\N	Talk-Show
+tt0871165	tvEpisode	Episode #3.14	Episode #3.14	0	2005	\N	\N	Talk-Show
+tt0871166	tvEpisode	Episode #3.15	Episode #3.15	0	2005	\N	\N	Talk-Show
+tt0871167	tvEpisode	Episode #3.2	Episode #3.2	0	2005	\N	\N	Talk-Show
+tt0871168	tvEpisode	Episode #3.3	Episode #3.3	0	2005	\N	\N	Talk-Show
+tt0871169	tvEpisode	Episode #3.4	Episode #3.4	0	2005	\N	\N	Talk-Show
+tt0871170	tvEpisode	Episode #3.5	Episode #3.5	0	2005	\N	\N	Talk-Show
+tt0871171	tvEpisode	Episode #3.6	Episode #3.6	0	2005	\N	\N	Talk-Show
+tt0871172	tvEpisode	Episode #3.7	Episode #3.7	0	2005	\N	\N	Talk-Show
+tt0871173	tvEpisode	Episode #3.8	Episode #3.8	0	2005	\N	\N	Talk-Show
+tt0871174	tvEpisode	Episode #3.9	Episode #3.9	0	2005	\N	\N	Talk-Show
+tt0871175	tvEpisode	Kapitel 222	Kapitel 222	0	2006	\N	\N	Drama
+tt0871176	tvEpisode	Kapitel 232	Kapitel 232	0	2006	\N	\N	Drama
+tt0871177	tvEpisode	Episode dated 17 April 1999	Episode dated 17 April 1999	0	1999	\N	\N	Family
+tt0871178	tvEpisode	Episode dated 24 April 1999	Episode dated 24 April 1999	0	1999	\N	\N	Family
+tt0871179	tvEpisode	Episode dated 22 May 1999	Episode dated 22 May 1999	0	1999	\N	\N	Family
+tt0871180	tvEpisode	Episode dated 29 May 1999	Episode dated 29 May 1999	0	1999	\N	\N	Family
+tt0871181	tvEpisode	Episode dated 19 June 1999	Episode dated 19 June 1999	0	1999	\N	\N	Family
+tt0871182	tvEpisode	Episode dated 26 June 1999	Episode dated 26 June 1999	0	1999	\N	\N	Family
+tt0871183	tvEpisode	Episode dated 3 July 1999	Episode dated 3 July 1999	0	1999	\N	\N	Family
+tt0871184	tvEpisode	Episode dated 7 August 1999	Episode dated 7 August 1999	0	1999	\N	\N	Family
+tt0871185	tvEpisode	Episode dated 26 February 2000	Episode dated 26 February 2000	0	2000	\N	\N	Family
+tt0871186	tvEpisode	Liking Things the Way They Aren't	Liking Things the Way They Aren't	0	2005	\N	\N	Comedy,Romance
+tt0871187	tvEpisode	Soupless in Seattle	Soupless in Seattle	0	2005	\N	\N	Comedy,Romance
+tt0871188	tvEpisode	The Defiant Ones	The Defiant Ones	0	2005	\N	\N	Comedy,Romance
+tt0871190	tvEpisode	We'll Always Have Bowling	We'll Always Have Bowling	0	2005	\N	\N	Comedy,Romance
+tt0871191	tvEpisode	Wouldn't It Be Nice	Wouldn't It Be Nice	0	2005	\N	\N	Comedy,Romance
+tt0871192	tvEpisode	Lilliput Special: 2	Lilliput Special: 2	0	2006	\N	\N	Family
+tt0871193	tvEpisode	Episode dated 26 September 2006	Episode dated 26 September 2006	0	2006	\N	\N	Music
+tt0871194	tvEpisode	Episode dated 27 September 2006	Episode dated 27 September 2006	0	2006	\N	\N	News
+tt0871195	tvEpisode	The Bed	The Bed	0	1963	\N	\N	Comedy
+tt0871196	tvEpisode	Trial Separation	Trial Separation	0	1963	\N	\N	Comedy
+tt0871197	tvEpisode	Right to Die	Right to Die	0	2007	\N	58	Horror
+tt0871198	tvMiniSeries	Matthew's Best Hit UV	Matthew's Best Hit UV	0	2006	\N	25	Game-Show,Talk-Show
+tt0871200	tvEpisode	For Better or Worse	For Better or Worse	0	2006	\N	44	Drama,Romance
+tt0871201	tvEpisode	The Eleventh Hour	The Eleventh Hour	0	2006	\N	44	Drama,Romance
+tt0871202	tvEpisode	Snow Job	Snow Job	0	2003	\N	\N	Comedy
+tt0871203	tvEpisode	Demolition	Demolition	0	1999	\N	\N	Documentary,History
+tt0871204	tvEpisode	Motorcycles	Motorcycles	0	1999	\N	\N	Documentary,History
+tt0871205	tvShort	Police Station	Police Station	0	1991	\N	6	Comedy,Short
+tt0871206	tvEpisode	Age Concerns	Age Concerns	0	2003	\N	\N	Comedy,Family,Fantasy
+tt0871207	tvEpisode	Aliens Go Home	Aliens Go Home	0	2001	\N	\N	Comedy,Family,Fantasy
+tt0871208	tvEpisode	Beauty and the Breast: Part 1	Beauty and the Breast: Part 1	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871209	tvEpisode	Beauty and the Breast: Part 2	Beauty and the Breast: Part 2	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871210	tvEpisode	Big Mother	Big Mother	0	2003	\N	\N	Comedy,Family,Fantasy
+tt0871211	tvEpisode	Brian of the Brownies	Brian of the Brownies	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871212	tvEpisode	Burglars Can't Be Choosers	Burglars Can't Be Choosers	0	2003	\N	\N	Comedy,Family,Fantasy
+tt0871213	tvEpisode	Crazy for You	Crazy for You	0	2001	\N	\N	Comedy,Family,Fantasy
+tt0871214	tvEpisode	El Presidente	El Presidente	0	2000	\N	\N	Comedy,Family,Fantasy
+tt0871215	tvEpisode	Enter the Duck	Enter the Duck	0	2001	\N	\N	Comedy,Family,Fantasy
+tt0871216	tvEpisode	First Christmas: Part 1	First Christmas: Part 1	0	2000	\N	\N	Comedy,Family,Fantasy
+tt0871217	tvEpisode	First Christmas: Part 2	First Christmas: Part 2	0	2000	\N	\N	Comedy,Family,Fantasy
+tt0871218	tvEpisode	Fish Fingers	Fish Fingers	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871219	tvEpisode	Halloween	Halloween	0	2001	\N	\N	Comedy,Family,Fantasy
+tt0871220	tvEpisode	Howie	Howie	0	2001	\N	\N	Comedy,Family,Fantasy
+tt0871221	tvEpisode	Just My Luck	Just My Luck	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871222	tvEpisode	King Brian	King Brian	0	2003	\N	\N	Comedy,Family,Fantasy
+tt0871223	tvEpisode	Magic Johnson	Magic Johnson	0	2001	\N	\N	Comedy,Family,Fantasy
+tt0871224	tvEpisode	Operation Date	Operation Date	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871225	tvEpisode	Rat's Entertainment	Rat's Entertainment	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871226	tvEpisode	Secrets and Lies	Secrets and Lies	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871227	tvEpisode	Skirting the Issue	Skirting the Issue	0	2000	\N	\N	Comedy,Family,Fantasy
+tt0871228	tvEpisode	Testing Times	Testing Times	0	2001	\N	\N	Comedy,Family,Fantasy
+tt0871229	tvEpisode	Textual Relations	Textual Relations	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871230	tvEpisode	The Bribe	The Bribe	0	2000	\N	\N	Comedy,Family,Fantasy
+tt0871231	tvEpisode	The Holiday	The Holiday	0	2000	\N	\N	Comedy,Family,Fantasy
+tt0871232	tvEpisode	The Invosibibble Mam	The Invosibibble Mam	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871233	tvEpisode	The Musical	The Musical	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871234	tvEpisode	The Naked Truth	The Naked Truth	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871235	tvEpisode	The Opposites	The Opposites	0	2002	\N	\N	Comedy,Family,Fantasy
+tt0871236	tvEpisode	The Sleepover	The Sleepover	0	2000	\N	\N	Comedy,Family,Fantasy
+tt0871237	tvEpisode	The Valentine	The Valentine	0	2001	\N	\N	Comedy,Family,Fantasy
+tt0871238	tvEpisode	The Wedding	The Wedding	0	2001	\N	\N	Comedy,Family,Fantasy
+tt0871239	tvEpisode	The Family Way	The Family Way	0	2000	\N	11	Comedy,Family,Fantasy
+tt0871240	tvEpisode	When Swaps Go Bad	When Swaps Go Bad	0	2001	\N	\N	Comedy,Family,Fantasy
+tt0871241	tvEpisode	NWA-TNA Weekly PPV #18	NWA-TNA Weekly PPV #18	0	2002	\N	\N	Action,Sport
+tt0871242	tvEpisode	NWA-TNA Weekly PPV #22	NWA-TNA Weekly PPV #22	0	2002	\N	\N	Action,Sport
+tt0871243	tvEpisode	NWA-TNA Weekly PPV #23	NWA-TNA Weekly PPV #23	0	2002	\N	\N	Action,Sport
+tt0871244	tvEpisode	Episode #1.3	Episode #1.3	0	2006	\N	\N	Game-Show
+tt0871245	tvEpisode	Episode #1.4	Episode #1.4	0	2006	\N	\N	Game-Show
+tt0871246	tvEpisode	Episode #1.5	Episode #1.5	0	2006	\N	\N	Game-Show
+tt0871247	tvEpisode	Episode #1.6	Episode #1.6	0	2006	\N	\N	Game-Show
+tt0871248	tvEpisode	Episode #1.7	Episode #1.7	0	2006	\N	\N	Game-Show
+tt0871249	tvEpisode	Episode #1.8	Episode #1.8	0	2006	\N	\N	Game-Show
+tt0871250	tvEpisode	Top 5 Performance Show: Pop	Top 5 Performance Show: Pop	0	2006	\N	\N	Game-Show,Music,Reality-TV
+tt0871251	tvEpisode	Top 5 Results Show	Top 5 Results Show	0	2006	\N	\N	Game-Show,Music,Reality-TV
+tt0871252	tvEpisode	Top 6 Performance Show: Groove	Top 6 Performance Show: Groove	0	2006	\N	\N	Game-Show,Music,Reality-TV
+tt0871253	tvEpisode	Top 6 Results Show	Top 6 Results Show	0	2006	\N	\N	Game-Show,Music,Reality-TV
+tt0871254	tvEpisode	Episode #5.12	Episode #5.12	0	2006	\N	\N	News
+tt0871255	tvEpisode	Episode #2.11	Episode #2.11	0	2006	\N	\N	Comedy,News,Talk-Show
+tt0871256	tvEpisode	Episode dated 17 April 1999	Episode dated 17 April 1999	0	1999	\N	\N	Comedy,Music
+tt0871257	tvEpisode	Episode dated 24 April 1999	Episode dated 24 April 1999	0	1999	\N	\N	Comedy,Music
+tt0871258	tvEpisode	Episode dated 1 May 1999	Episode dated 1 May 1999	0	1999	\N	\N	Comedy,Music
+tt0871259	tvEpisode	Episode dated 8 May 1999	Episode dated 8 May 1999	0	1999	\N	\N	Comedy,Music
+tt0871260	tvEpisode	Episode dated 15 May 1999	Episode dated 15 May 1999	0	1999	\N	\N	Comedy,Music
+tt0871261	tvEpisode	Episode dated 22 May 1999	Episode dated 22 May 1999	0	1999	\N	\N	Comedy,Music
+tt0871262	tvEpisode	Episode dated 29 May 1999	Episode dated 29 May 1999	0	1999	\N	\N	Comedy,Music
+tt0871263	tvEpisode	Episode dated 5 June 1999	Episode dated 5 June 1999	0	1999	\N	\N	Comedy,Music
+tt0871264	tvEpisode	Episode dated 12 June 1999	Episode dated 12 June 1999	0	1999	\N	\N	Comedy,Music
+tt0871265	tvEpisode	Episode dated 19 June 1999	Episode dated 19 June 1999	0	1999	\N	\N	Comedy,Music
+tt0871266	tvEpisode	Episode dated 26 June 1999	Episode dated 26 June 1999	0	1999	\N	\N	Comedy,Music
+tt0871267	tvEpisode	Episode dated 23 September 2000	Episode dated 23 September 2000	0	2000	\N	\N	Comedy,Music
+tt0871268	tvEpisode	Episode dated 30 September 2000	Episode dated 30 September 2000	0	2000	\N	\N	Comedy,Music
+tt0871269	tvEpisode	Episode dated 7 October 2000	Episode dated 7 October 2000	0	2000	\N	\N	Comedy,Music
+tt0871270	tvEpisode	Episode dated 13 March 1999	Episode dated 13 March 1999	0	1999	\N	\N	Music
+tt0871271	tvEpisode	Episode dated 20 March 1999	Episode dated 20 March 1999	0	1999	\N	\N	Music
+tt0871272	tvEpisode	Episode dated 27 March 1999	Episode dated 27 March 1999	0	1999	\N	\N	Music
+tt0871273	tvEpisode	Episode dated 3 April 1999	Episode dated 3 April 1999	0	1999	\N	\N	Music
+tt0871274	tvEpisode	Episode dated 10 April 1999	Episode dated 10 April 1999	0	1999	\N	\N	Music
+tt0871275	tvEpisode	Episode dated 17 April 1999	Episode dated 17 April 1999	0	1999	\N	\N	Music
+tt0871276	tvEpisode	Episode dated 12 February 2000	Episode dated 12 February 2000	0	2000	\N	\N	Music
+tt0871277	tvEpisode	Episode dated 19 February 2000	Episode dated 19 February 2000	0	2000	\N	\N	Music
+tt0871278	tvEpisode	Episode dated 26 February 2000	Episode dated 26 February 2000	0	2000	\N	\N	Music
+tt0871279	tvEpisode	Episode dated 30 October 2000	Episode dated 30 October 2000	0	2000	\N	\N	Music
+tt0871280	tvEpisode	Episode dated 6 November 2000	Episode dated 6 November 2000	0	2000	\N	\N	Music
+tt0871281	tvEpisode	Episode dated 13 November 2000	Episode dated 13 November 2000	0	2000	\N	\N	Music
+tt0871282	tvEpisode	Episode dated 20 November 2000	Episode dated 20 November 2000	0	2000	\N	\N	Music
+tt0871283	tvEpisode	Episode dated 27 November 2000	Episode dated 27 November 2000	0	2000	\N	\N	Music
+tt0871284	tvEpisode	Episode dated 4 December 2000	Episode dated 4 December 2000	0	2000	\N	\N	Music
+tt0871285	tvEpisode	Episode dated 11 May 2003	Episode dated 11 May 2003	0	2003	\N	\N	Music
+tt0871286	tvEpisode	Episode dated 18 May 2003	Episode dated 18 May 2003	0	2003	\N	\N	Music
+tt0871287	tvEpisode	Episode dated 25 May 2003	Episode dated 25 May 2003	0	2003	\N	\N	Music
+tt0871288	tvEpisode	Episode dated 1 June 2003	Episode dated 1 June 2003	0	2003	\N	\N	Music
+tt0871289	tvEpisode	Episode dated 8 June 2003	Episode dated 8 June 2003	0	2003	\N	\N	Music
+tt0871290	tvEpisode	Episode dated 15 June 2003	Episode dated 15 June 2003	0	2003	\N	\N	Music
+tt0871291	tvEpisode	Episode dated 22 June 2003	Episode dated 22 June 2003	0	2003	\N	\N	Music
+tt0871292	tvEpisode	Episode dated 12 February 2004	Episode dated 12 February 2004	0	2004	\N	\N	Music
+tt0871293	tvEpisode	Episode dated 19 February 2004	Episode dated 19 February 2004	0	2004	\N	\N	Music
+tt0871294	tvEpisode	Episode dated 26 February 2004	Episode dated 26 February 2004	0	2004	\N	\N	Music
+tt0871295	tvEpisode	Episode dated 5 March 2004	Episode dated 5 March 2004	0	2004	\N	\N	Music
+tt0871296	tvEpisode	Androcles and the Lion	Androcles and the Lion	0	1956	\N	\N	Drama,History,Music
+tt0871297	tvEpisode	Episode dated 26 September 2006	Episode dated 26 September 2006	0	2006	\N	\N	Talk-Show
+tt0871298	tvEpisode	Episode dated 27 September 2006	Episode dated 27 September 2006	0	2006	\N	\N	Talk-Show
+tt0871299	tvEpisode	Last Edition	Last Edition	0	2006	\N	\N	Talk-Show
+tt0871300	tvEpisode	Episode dated 26 September 2006	Episode dated 26 September 2006	0	2006	\N	\N	News,Sport,Talk-Show
+tt0871302	tvEpisode	Episode #5.2	Episode #5.2	0	2006	\N	\N	Comedy,Talk-Show
+tt0871303	tvEpisode	Dial P for Pink	Dial P for Pink	0	1969	\N	22	Animation,Comedy,Family
+tt0871304	tvEpisode	We Give Pink Stamps	We Give Pink Stamps	0	1969	\N	23	Animation,Comedy,Family
+tt0871305	tvEpisode	Odcinek 746	Odcinek 746	0	2006	\N	\N	Drama,Romance
+tt0871306	tvEpisode	529	529	0	2006	\N	\N	Comedy,Drama,Romance
+tt0871307	tvEpisode	Dirty Weekend	Dirty Weekend	0	1986	\N	\N	Comedy,Drama
+tt0871308	tvEpisode	Episode dated 27 September 2006	Episode dated 27 September 2006	0	2006	\N	\N	Drama,Mystery,Romance
+tt0871309	tvEpisode	La penúltima carta	La penúltima carta	0	1997	\N	\N	Comedy
+tt0871310	tvEpisode	Episode dated 26 September 2006	Episode dated 26 September 2006	0	2006	\N	\N	Sport,Talk-Show
+tt0871311	tvEpisode	Lupe Fiasco in the House	Lupe Fiasco in the House	0	2006	\N	\N	Music
+tt0871312	tvEpisode	Grampa's Private War	Grampa's Private War	0	1959	\N	30	Comedy,Family
+tt0871313	tvEpisode	The Lost Park	The Lost Park	0	1986	\N	\N	Drama,Family
+tt0871314	tvEpisode	Revolution	Revolution	0	2006	\N	59	Documentary,Drama,History
+tt0871315	tvEpisode	Episode dated 11 March 2005	Episode dated 11 March 2005	0	2005	\N	\N	Music,Talk-Show
+tt0871316	tvEpisode	Episode dated 8 April 2005	Episode dated 8 April 2005	0	2005	\N	\N	Music,Talk-Show
+tt0871317	tvEpisode	Episode dated 22 April 2005	Episode dated 22 April 2005	0	2005	\N	\N	Music,Talk-Show
+tt0871318	tvEpisode	The Munnery	The Munnery	0	2006	\N	11	Adventure,Animation,Comedy
+tt0871319	tvEpisode	Oya Festival: Episode 2	Oya Festival: Episode 2	0	2006	\N	\N	Music
+tt0871320	tvEpisode	Episode dated 26 September 2006	Episode dated 26 September 2006	0	2006	\N	\N	Sport,Talk-Show
+tt0871321	tvEpisode	There's No Place Like Home	There's No Place Like Home	0	2006	\N	\N	Drama
+tt0871322	tvEpisode	Episode #1.1345	Episode #1.1345	0	1980	\N	22	Drama,Romance
+tt0871324	tvEpisode	April	April	0	1981	\N	\N	Drama
+tt0871325	tvEpisode	June	June	0	1981	\N	\N	Drama
+tt0871326	tvEpisode	Diets	Diets	0	2007	\N	\N	\N
+tt0871327	tvEpisode	Movie Treats	Movie Treats	0	2007	\N	\N	\N
+tt0871328	tvEpisode	Secret Life of Sushi	Secret Life of Sushi	0	\N	\N	\N	\N
+tt0871329	tvEpisode	A Hardy Breed of Girl	A Hardy Breed of Girl	0	1978	\N	\N	Drama
+tt0871330	tvEpisode	Away All Boats	Away All Boats	0	1978	\N	\N	Drama
+tt0871331	tvEpisode	Beware the Gentle People	Beware the Gentle People	0	1978	\N	\N	Drama
+tt0871332	tvEpisode	Chickabiddy	Chickabiddy	0	1978	\N	\N	Drama
+tt0871333	tvEpisode	Goosepimples	Goosepimples	0	1978	\N	\N	Drama
+tt0871334	tvEpisode	Home Games	Home Games	0	1978	\N	\N	Drama
+tt0871335	tvEpisode	Episode #3.4	Episode #3.4	0	1971	\N	\N	Comedy
+tt0871336	tvEpisode	Dudley and Nestor Do Nothing	Dudley and Nestor Do Nothing	0	2006	\N	\N	Adventure,Animation,Comedy
+tt0871337	tvEpisode	Episode #1.1	Episode #1.1	0	1989	\N	24	Comedy,Sci-Fi
+tt0871338	tvEpisode	Capítulo 166	Capítulo 166	0	2006	\N	60	Comedy,Romance,Sport
+tt0871339	tvEpisode	Mavis Staples/Funky Poets	Mavis Staples/Funky Poets	0	1994	\N	\N	Music,Talk-Show
+tt0871340	tvEpisode	All's Well That Ends Al	All's Well That Ends Al	0	2006	\N	23	Comedy,Sport
+tt0871341	tvEpisode	Breakdown	Breakdown	0	2006	\N	\N	Comedy,Sport
+tt0871342	tvEpisode	Heal Me	Heal Me	0	2006	\N	23	Comedy,Sport
+tt0871343	tvEpisode	Little League	Little League	0	2006	\N	23	Comedy,Sport
+tt0871344	tvEpisode	Meet the Team	Meet the Team	0	2006	\N	23	Comedy,Sport
+tt0871345	tvEpisode	Steinbach	Steinbach	0	2006	\N	23	Comedy,Sport
+tt0871346	tvEpisode	Under Construction	Under Construction	0	2006	\N	23	Comedy,Sport
+tt0871347	tvEpisode	Uneven Steven	Uneven Steven	0	2006	\N	23	Comedy,Sport
+tt0871348	tvEpisode	Montreal	Montreal	0	1999	\N	\N	Comedy,Documentary
+tt0871349	tvEpisode	Portland	Portland	0	2000	\N	\N	Comedy,Documentary
+tt0871350	tvEpisode	Episode #3.29	Episode #3.29	0	2006	\N	\N	Talk-Show
+tt0871351	tvEpisode	Episode #3.30	Episode #3.30	0	2006	\N	\N	Talk-Show
+tt0871352	tvEpisode	Episode #3.32	Episode #3.32	0	2006	\N	\N	Talk-Show
+tt0871353	tvEpisode	Episode #3.33	Episode #3.33	0	2006	\N	\N	Talk-Show
+tt0871354	tvEpisode	Episode #3.34	Episode #3.34	0	2006	\N	\N	Talk-Show
+tt0871355	tvEpisode	Best of 'A'	Best of 'A'	0	2006	\N	\N	Talk-Show
+tt0871356	tvEpisode	Best of 'B'	Best of 'B'	0	2006	\N	\N	Talk-Show
+tt0871357	tvEpisode	Best of 'C'	Best of 'C'	0	2006	\N	\N	Talk-Show
+tt0871358	tvEpisode	Best of 'D'	Best of 'D'	0	2006	\N	\N	Talk-Show
+tt0871359	tvEpisode	The Super Globetrotters vs. Attila the Hun	The Super Globetrotters vs. Attila the Hun	0	1979	\N	\N	Animation,Family,Sport
+tt0871360	tvEpisode	The Super Globetrotters vs. Bullmoose	The Super Globetrotters vs. Bullmoose	0	1979	\N	\N	Animation,Family,Sport
+tt0871361	tvEpisode	The Super Globetrotters vs. Bwana Bob	The Super Globetrotters vs. Bwana Bob	0	1979	\N	\N	Animation,Family,Sport
+tt0871362	tvEpisode	The Super Globetrotters vs. Merlo the Magician	The Super Globetrotters vs. Merlo the Magician	0	1979	\N	\N	Animation,Family,Sport
+tt0871363	tvEpisode	The Super Globetrotters vs. Movie Man	The Super Globetrotters vs. Movie Man	0	1979	\N	23	Animation,Family,Sport
+tt0871364	tvEpisode	The Super Globetrotters vs. Museum Man	The Super Globetrotters vs. Museum Man	0	1979	\N	\N	Animation,Family,Sport
+tt0871365	tvEpisode	The Super Globetrotters vs. Robo and the Globots	The Super Globetrotters vs. Robo and the Globots	0	1979	\N	\N	Animation,Family,Sport
+tt0871366	tvEpisode	The Super Globetrotters vs. Tattoo Man	The Super Globetrotters vs. Tattoo Man	0	1979	\N	\N	Animation,Family,Sport
+tt0871367	tvEpisode	The Super Globetrotters vs. The Facelift	The Super Globetrotters vs. The Facelift	0	1979	\N	\N	Animation,Family,Sport
+tt0871368	tvEpisode	The Super Globetrotters vs. The Phantom Cowboy	The Super Globetrotters vs. The Phantom Cowboy	0	1979	\N	\N	Animation,Family,Sport
+tt0871369	tvEpisode	The Super Globetrotters vs. The Time Lord	The Super Globetrotters vs. The Time Lord	0	1979	\N	\N	Animation,Family,Sport
+tt0871370	tvEpisode	The Super Globetrotters vs. Transylvania Terrors	The Super Globetrotters vs. Transylvania Terrors	0	1979	\N	\N	Animation,Family,Sport
+tt0871371	tvEpisode	The Super Globetrotters vs. Whaleman	The Super Globetrotters vs. Whaleman	0	1979	\N	\N	Animation,Family,Sport
+tt0871372	tvEpisode	Episode #1.6	Episode #1.6	0	2006	\N	\N	Game-Show,Reality-TV
+tt0871373	tvEpisode	Episode #2.7	Episode #2.7	0	2006	\N	\N	\N
+tt0871374	tvEpisode	Episode #2.9	Episode #2.9	0	2005	\N	\N	Comedy,Drama
+tt0871375	tvEpisode	Episode dated 27 September 2006	Episode dated 27 September 2006	0	2006	\N	\N	News,Talk-Show
+tt0871376	tvEpisode	Episode #14.168	Episode #14.168	0	2006	\N	\N	Comedy,Music,Talk-Show
+tt0871377	tvEpisode	Stan Getz	Stan Getz	0	1955	\N	\N	Comedy,Music,Talk-Show
+tt0871378	tvEpisode	Ethel Waters	Ethel Waters	0	1955	\N	\N	Comedy,Music,Talk-Show
+tt0871379	tvEpisode	Art Tatum, Vic Perry	Art Tatum, Vic Perry	0	1955	\N	\N	Comedy,Music,Talk-Show
+tt0871380	tvEpisode	Hollywood Show Final	Hollywood Show Final	0	1955	\N	\N	Comedy,Music,Talk-Show
+tt0871381	tvEpisode	Episode dated 1 April 2006	Episode dated 1 April 2006	0	2006	\N	\N	Music
+tt0871382	tvEpisode	Episode dated 8 April 2006	Episode dated 8 April 2006	0	2006	\N	\N	Music
+tt0871384	tvEpisode	The Star of Sorrow I. City of Blood	The Star of Sorrow I. City of Blood	0	2005	\N	24	Action,Animation,Drama
+tt0871385	tvEpisode	The Star of Sorrow II. Hunter's Banquet	The Star of Sorrow II. Hunter's Banquet	0	2005	\N	24	Action,Animation,Drama
+tt0871386	tvEpisode	Witch Hunt	Witch Hunt	0	2005	\N	24	Action,Animation,Drama
+tt0871387	tvEpisode	I'm Living in Iraq	I'm Living in Iraq	0	2004	\N	\N	Documentary,Romance
+tt0871388	tvEpisode	Episode #2.11	Episode #2.11	0	2006	\N	\N	News
+tt0871389	tvEpisode	Episode #2.8	Episode #2.8	0	2006	\N	\N	News
+tt0871390	tvEpisode	Jeffrey's Choice	Jeffrey's Choice	0	2006	\N	\N	Comedy
+tt0871391	tvEpisode	The Cell	The Cell	0	2006	\N	43	Drama,Mystery,Thriller
+tt0871392	tvEpisode	Cambodia and Laos	Cambodia and Laos	0	1983	\N	\N	Documentary,History,War
+tt0871393	tvEpisode	Homefront USA	Homefront USA	0	1983	\N	\N	Documentary,History,War
+tt0871394	tvEpisode	Peace Is at Hand: 1968-1973	Peace Is at Hand: 1968-1973	0	1983	\N	\N	Documentary,History,War
+tt0871395	tvEpisode	Tet: 1968	Tet: 1968	0	1983	\N	\N	Documentary,History,War
+tt0871396	tvEpisode	The End of the Tunnel: 1973-1975	The End of the Tunnel: 1973-1975	0	1983	\N	\N	Documentary,History,War
+tt0871397	tvEpisode	Vietnamizing the War: 1969-1973	Vietnamizing the War: 1969-1973	0	1983	\N	\N	Documentary,History,War
+tt0871398	tvEpisode	Episode dated 13 October 1999	Episode dated 13 October 1999	0	1999	\N	\N	\N
+tt0871400	tvEpisode	Episode dated 20 October 1999	Episode dated 20 October 1999	0	1999	\N	\N	\N
+tt0871405	tvEpisode	Super Dave	Super Dave	0	2006	\N	\N	Comedy,Romance
+tt0871406	tvEpisode	Bitter Harvest	Bitter Harvest	0	2002	\N	\N	Documentary
+tt0871407	tvEpisode	Cause for Murder	Cause for Murder	0	2002	\N	\N	Documentary
+tt0871408	tvEpisode	Greetings from Grozny	Greetings from Grozny	0	2002	\N	\N	Documentary
+tt0871409	tvEpisode	Growing Up Global	Growing Up Global	0	2002	\N	\N	Documentary
+tt0871410	tvEpisode	Land of Wandering Souls	Land of Wandering Souls	0	2002	\N	\N	Documentary
+tt0871411	tvEpisode	Media by Milosevic	Media by Milosevic	0	2002	\N	\N	Documentary
+tt0871412	tvEpisode	Saddam's Ultimate Solution	Saddam's Ultimate Solution	0	2002	\N	\N	Documentary
+tt0871413	tvEpisode	Soul of India	Soul of India	0	2002	\N	\N	Documentary
+tt0871414	tvEpisode	The Empty ATM	The Empty ATM	0	2002	\N	\N	Documentary
+tt0871415	tvEpisode	To Have and Have Not	To Have and Have Not	0	2002	\N	\N	Documentary
+tt0871416	tvEpisode	Episode dated 27 September 2006	Episode dated 27 September 2006	0	2006	\N	\N	Documentary
+tt0871417	tvEpisode	Manners	Manners	0	1984	\N	\N	Comedy,Family
+tt0871418	tvEpisode	Media	Media	0	1983	\N	\N	Comedy,Family
+tt0871419	tvEpisode	Pets	Pets	0	1983	\N	\N	Comedy,Family
+tt0871420	tvEpisode	Romance and Dating	Romance and Dating	0	1985	\N	\N	Comedy,Family
+tt0871421	tvEpisode	Rules and Regulations	Rules and Regulations	0	1983	\N	\N	Comedy,Family
+tt0871424	video	The 2003 World Yo-Yo Championships	The 2003 World Yo-Yo Championships	0	2004	\N	\N	Documentary,Short
+tt0871425	tvMovie	Pretty/Handsome	Pretty/Handsome	0	2008	\N	67	Drama
+tt0871426	movie	Baby Mama	Baby Mama	0	2008	\N	99	Comedy,Romance
+tt0871427	video	Babylon 5: The Lost Tales	Babylon 5: The Lost Tales	0	2007	\N	75	Adventure,Drama,Horror
+tt0871428	short	The Bear	The Bear	0	1999	\N	13	Short
+tt0871429	movie	Casting	Casting	0	2003	\N	52	Documentary
+tt0871430	movie	Croire	Croire	0	1998	\N	52	Documentary
+tt0871431	short	DoDo Rings	DoDo Rings	0	2006	\N	9	Comedy,Short
+tt0871432	short	Eternal Child	Eternal Child	0	2005	\N	5	Drama,Short
+tt0871433	short	For Sam	For Sam	0	2006	\N	10	Drama,Short
+tt0871434	short	Heitelläänhän kääpiöitäkin	Heitelläänhän kääpiöitäkin	0	2006	\N	26	Comedy,Drama,Short
+tt0871435	tvEpisode	Le monde des trotskystes	Le monde des trotskystes	0	2006	\N	85	Documentary,History
+tt0871436	movie	Monkey Dance	Monkey Dance	0	2004	\N	65	Documentary
+tt0871437	tvMovie	O.C.T.: Occult Crimes Taskforce	O.C.T.: Occult Crimes Taskforce	0	\N	\N	\N	Action,Crime,Drama
+tt0871438	movie	Ocean of Pearls	Ocean of Pearls	0	2008	\N	97	Drama
+tt0871439	movie	Public Witness	Public Witness	0	2006	\N	66	\N
+tt0871441	movie	Rex Mundi	Rex Mundi	0	\N	\N	\N	Adventure,Drama,Fantasy
+tt0871442	video	Roxy Music: Live at the Apollo	Roxy Music: Live at the Apollo	0	2003	\N	109	Music
+tt0871443	video	Sade: Lovers Live	Sade: Lovers Live	0	2002	\N	116	Documentary,Music
+tt0871444	short	Sim Movie	Sim Movie	0	2003	\N	1	Short
+tt0871445	short	I soliti idioti	I soliti idioti	0	2003	\N	16	Comedy,Short
+tt0871446	tvSpecial	TNN/CMT Country Weekly Music Awards	TNN/CMT Country Weekly Music Awards	0	2001	\N	\N	\N
+tt0871447	movie	Thend	Thend	0	1999	\N	90	Drama
+tt0871448	tvEpisode	Bumerang	Bumerang	0	2006	\N	90	Crime
+tt0871449	movie	Treasure in Malta	Treasure in Malta	0	1963	\N	93	Adventure
+tt0871451	tvMovie	The Hill	The Hill	0	2007	\N	\N	Comedy
+tt0871452	video	Voyeur Cam	Voyeur Cam	1	2003	\N	95	Adult
+tt0871453	movie	Le pont de l'exil	Le pont de l'exil	0	1997	\N	52	Documentary
+tt0871454	tvEpisode	Le petit fugitif	Le petit fugitif	0	2006	\N	\N	Crime
+tt0871455	tvEpisode	Passeport diplomatique	Passeport diplomatique	0	2006	\N	\N	Crime
+tt0871456	tvEpisode	Die goldene Hochzeit	Die goldene Hochzeit	0	2001	\N	49	Comedy,Family
+tt0871457	tvEpisode	Cosas de mujer	Cosas de mujer	0	1999	\N	\N	Comedy,Romance
+tt0871458	tvEpisode	La vida sigue... casi igual	La vida sigue... casi igual	0	1994	\N	\N	Comedy
+tt0871459	tvEpisode	Ilmainen lounas	Ilmainen lounas	0	1999	\N	\N	Comedy
+tt0871460	tvEpisode	Kaksoiselämää	Kaksoiselämää	0	1999	\N	\N	Comedy
+tt0871461	tvEpisode	Kutsumusammatti	Kutsumusammatti	0	1999	\N	\N	Comedy
+tt0871462	tvEpisode	Royal politik	Royal politik	0	2005	\N	\N	Talk-Show
+tt0871463	tvEpisode	Thorning og kaos?	Thorning og kaos?	0	2005	\N	\N	Talk-Show
+tt0871464	tvEpisode	Abendstern	Abendstern	0	2002	\N	10	Animation
+tt0871465	tvEpisode	Hundsstern	Hundsstern	0	2002	\N	10	Animation
+tt0871466	tvEpisode	Sternbilder	Sternbilder	0	2002	\N	10	Animation
+tt0871467	tvEpisode	Sternengold	Sternengold	0	2002	\N	10	Animation
+tt0871468	tvEpisode	Sternenhimmel	Sternenhimmel	0	2002	\N	10	Animation
+tt0871469	tvEpisode	Sternenlicht	Sternenlicht	0	2002	\N	10	Animation
+tt0871470	tvEpisode	Sternenschar	Sternenschar	0	2002	\N	9	Animation
+tt0871471	tvEpisode	Sternenwärts	Sternenwärts	0	2002	\N	10	Animation
+tt0871472	tvEpisode	Sternfahrt	Sternfahrt	0	2002	\N	9	Animation
+tt0871473	tvEpisode	Sternflimmern	Sternflimmern	0	2002	\N	10	Animation
+tt0871474	tvEpisode	Sternkunde	Sternkunde	0	2002	\N	10	Animation
+tt0871475	tvEpisode	Sternstunde	Sternstunde	0	2002	\N	10	Animation
+tt0871476	tvEpisode	Sterntaler	Sterntaler	0	2002	\N	10	Animation
+tt0871477	tvEpisode	O manancial	O manancial	0	2004	\N	\N	Thriller
+tt0871478	tvEpisode	El muerto al hoyo y el vivo al bollo	El muerto al hoyo y el vivo al bollo	0	2006	\N	\N	Comedy
+tt0871479	tvEpisode	Mi marido ya no me hace el Annapurna	Mi marido ya no me hace el Annapurna	0	2004	\N	\N	Comedy
+tt0871480	tvEpisode	Soy un celoso compulsivo	Soy un celoso compulsivo	0	2004	\N	\N	Comedy
+tt0871481	tvEpisode	Der Ausflug	Der Ausflug	0	1992	\N	\N	\N
+tt0871482	tvEpisode	Der Bräutigam	Der Bräutigam	0	1992	\N	\N	\N
+tt0871483	tvEpisode	Der Jungbrunnen	Der Jungbrunnen	0	1992	\N	\N	\N
+tt0871484	tvEpisode	Der Kandidat	Der Kandidat	0	1992	\N	\N	\N
+tt0871485	tvEpisode	Der Test	Der Test	0	1992	\N	\N	\N
+tt0871486	tvEpisode	Der letzte Weg	Der letzte Weg	0	1992	\N	\N	\N
+tt0871487	tvEpisode	Die Ankunft	Die Ankunft	0	1992	\N	\N	\N
+tt0871488	tvEpisode	Die Hochzeit	Die Hochzeit	0	1992	\N	\N	\N
+tt0871489	tvEpisode	Die Mauer fällt	Die Mauer fällt	0	1992	\N	\N	\N
+tt0871490	tvEpisode	Die neue Kraft	Die neue Kraft	0	1992	\N	\N	\N
+tt0871491	tvEpisode	Ein Blick ins Jenseits	Ein Blick ins Jenseits	0	1992	\N	\N	\N
+tt0871492	tvEpisode	Investitionen	Investitionen	0	1992	\N	\N	\N
+tt0871493	tvEpisode	Trennung	Trennung	0	1992	\N	\N	\N
+tt0871494	tvEpisode	Buffalo Burrito/Parkerina	Buffalo Burrito/Parkerina	0	2006	\N	\N	Animation,Comedy,Fantasy
+tt0871495	tvEpisode	A mellor lotería é ter saúde	A mellor lotería é ter saúde	0	2004	\N	\N	Comedy
+tt0871496	tvEpisode	Asasinato na aldea	Asasinato na aldea	0	2005	\N	\N	Comedy
+tt0871497	tvEpisode	Buscar na enciclopedia	Buscar na enciclopedia	0	2006	\N	\N	Comedy
+tt0871498	tvEpisode	Especialistas en caixas fortes	Especialistas en caixas fortes	0	2005	\N	\N	Comedy
+tt0871499	tvEpisode	Flamenco no bar Suízo	Flamenco no bar Suízo	0	\N	\N	\N	Comedy
+tt0871500	tvEpisode	Nacidos para ser artistas	Nacidos para ser artistas	0	2004	\N	\N	Comedy
+tt0871501	tvEpisode	O profesional do ano	O profesional do ano	0	2006	\N	\N	Comedy
+tt0871502	tvEpisode	Queridos reis magos	Queridos reis magos	0	2005	\N	\N	Comedy
+tt0871503	tvEpisode	Abgezockt	Abgezockt	0	2006	\N	\N	Crime
+tt0871504	tvSeries	Torun ve torunu	Torun ve torunu	0	2006	2006	75	Comedy
+tt0871505	tvEpisode	A toda máquina	A toda máquina	0	2006	\N	\N	Drama
+tt0871507	tvSeries	Que buena TV	Que buena TV	0	2000	\N	44	Music
+tt0871509	movie	The Last Gang	Le dernier gang	0	2007	\N	125	Crime
+tt0871510	movie	Let's Go! India	Chak De! India	0	2007	\N	153	Drama,Family,Sport
+tt0871511	movie	Off and Running	Passe-passe	0	2008	\N	93	Comedy
+tt0871512	movie	Disengagement	Disengagement	0	2007	\N	115	Drama
+tt0871513	movie	Frankenstein's Bloody Nightmare	Frankenstein's Bloody Nightmare	0	2006	\N	77	Horror
+tt0871515	tvEpisode	Bowtime	Bowtime	0	2006	\N	\N	Action,Adventure,Animation
+tt0871516	tvEpisode	MIR: Top Secret	MIR: Top Secret	0	2001	\N	\N	Comedy
+tt0871517	tvSeries	Ali's Dozen	Ali's Dozen	0	2006	\N	\N	Sport
+tt0871518	tvEpisode	Episode dated 13 November 2003	Episode dated 13 November 2003	0	2003	\N	\N	Drama,Mystery,Romance
+tt0871519	tvEpisode	The Hair Down There	The Hair Down There	0	2006	\N	21	Comedy
+tt0871520	tvEpisode	The Girl Who Hates Her Hair	The Girl Who Hates Her Hair	0	2006	\N	44	Game-Show,Reality-TV
+tt0871521	tvEpisode	The Gold Rush	The Gold Rush	0	2006	\N	120	Biography,Documentary,History
+tt0871522	tvEpisode	Canadian Roundup	Canadian Roundup	0	1968	\N	\N	\N
+tt0871523	tvEpisode	High Sierra Jeep Trek	High Sierra Jeep Trek	0	1968	\N	\N	\N
+tt0871524	tvEpisode	Lake Chapala Paradise	Lake Chapala Paradise	0	1968	\N	\N	\N
+tt0871525	tvEpisode	Oregon's Mountain Wonderland	Oregon's Mountain Wonderland	0	1968	\N	\N	\N
+tt0871526	tvEpisode	Surfing Western Style	Surfing Western Style	0	1968	\N	\N	\N
+tt0871527	tvEpisode	Whale Chase in Baja	Whale Chase in Baja	0	1968	\N	\N	\N
+tt0871528	tvEpisode	Amazing Animals	Amazing Animals	0	2006	\N	\N	Documentary,News
+tt0871529	tvEpisode	The Tiger Temple in Thailand: Part 1	The Tiger Temple in Thailand: Part 1	0	2006	\N	\N	Documentary,News
+tt0871530	tvEpisode	The Tiger Temple in Thailand: Part 2	The Tiger Temple in Thailand: Part 2	0	2006	\N	\N	Documentary,News
+tt0871531	tvEpisode	Episode #1.12858	Episode #1.12858	0	2006	\N	\N	Drama,Romance
+tt0871532	tvEpisode	Episode #1.12859	Episode #1.12859	0	2006	\N	\N	Drama,Romance
+tt0871533	tvEpisode	Episode dated 24 October 2006	Episode dated 24 October 2006	0	2006	\N	\N	Drama,Romance
+tt0871534	tvEpisode	Episode #3.20	Episode #3.20	0	2006	\N	\N	News,Talk-Show
+tt0871535	tvEpisode	Episode #3.22	Episode #3.22	0	2006	\N	\N	News,Talk-Show
+tt0871536	tvEpisode	Episode #3.33	Episode #3.33	0	2006	\N	\N	News,Talk-Show
+tt0871537	tvEpisode	No Son of Mine	No Son of Mine	0	1968	\N	\N	Comedy
+tt0871538	tvEpisode	Pryde and Prejudice	Pryde and Prejudice	0	1968	\N	\N	Comedy
+tt0871539	tvEpisode	A Man, a Woman, and a Horse	A Man, a Woman, and a Horse	0	1981	\N	24	Comedy,Western
+tt0871540	tvEpisode	Elvira's Old Beau	Elvira's Old Beau	0	1982	\N	24	Comedy,Western
+tt0871541	tvEpisode	Sam's Life Is Threatened	Sam's Life Is Threatened	0	1982	\N	24	Comedy,Western
+tt0871542	tvEpisode	The Cave-In	The Cave-In	0	1982	\N	24	Comedy,Western
+tt0871543	tvEpisode	Episode dated 26 August 2006	Episode dated 26 August 2006	0	2006	\N	\N	News,Talk-Show
+tt0871544	tvEpisode	Audie Murphy: Great American Hero	Audie Murphy: Great American Hero	0	1996	\N	60	Biography,Documentary,History
+tt0871545	tvEpisode	Carol Burnett: Just to Have a Laugh	Carol Burnett: Just to Have a Laugh	0	1996	\N	60	Biography,Documentary,History
+tt0871546	tvEpisode	Olga Korbut: The Gymnast, Her Coach, Her Rival & the President	Olga Korbut: The Gymnast, Her Coach, Her Rival & the President	0	2000	\N	60	Biography,Documentary,History
+tt0871547	tvEpisode	Patton: A Genius for War	Patton: A Genius for War	0	1995	\N	60	Biography,Documentary,History
+tt0871548	tvEpisode	Shirley Temple: Hollywood's Little Princess	Shirley Temple: Hollywood's Little Princess	0	1997	\N	60	Biography,Documentary,History
+tt0871549	tvEpisode	Shirley Temple: The Biggest Little Star	Shirley Temple: The Biggest Little Star	0	1996	\N	90	Biography,Documentary,History
+tt0871550	tvEpisode	Bob Hires a Maid	Bob Hires a Maid	0	1957	\N	30	Comedy
+tt0871551	tvEpisode	Bob for Mayor	Bob for Mayor	0	1957	\N	\N	Comedy
+tt0871552	tvEpisode	Episode #1.19	Episode #1.19	0	1993	\N	\N	Comedy
+tt0871553	tvEpisode	Fools Rush In	Fools Rush In	0	1984	\N	\N	Comedy
+tt0871554	tvEpisode	Episode #1.8	Episode #1.8	0	2006	\N	\N	Comedy,Documentary
+tt0871555	tvEpisode	Lost and Found	Lost and Found	0	1987	\N	60	Drama
+tt0871556	tvEpisode	Psych 101	Psych 101	0	2007	\N	30	Comedy
+tt0871557	tvEpisode	The Dare	The Dare	0	2006	\N	30	Comedy
+tt0871558	tvEpisode	Episode dated 19 September 1969	Episode dated 19 September 1969	0	1969	\N	\N	Comedy
+tt0871559	tvEpisode	Episode #3.13	Episode #3.13	0	2006	\N	\N	Talk-Show
+tt0871560	tvEpisode	Episode dated 8 December 2004	Episode dated 8 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871561	tvEpisode	Episode dated 9 December 2004	Episode dated 9 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871562	tvEpisode	Episode dated 10 December 2004	Episode dated 10 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871563	tvEpisode	Episode dated 11 December 2004	Episode dated 11 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871564	tvEpisode	Episode dated 13 December 2004	Episode dated 13 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871565	tvEpisode	Episode dated 14 December 2004	Episode dated 14 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871566	tvEpisode	Episode dated 15 December 2004	Episode dated 15 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871567	tvEpisode	Episode dated 16 December 2004	Episode dated 16 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871568	tvEpisode	Episode dated 17 December 2004	Episode dated 17 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871569	tvEpisode	Episode dated 18 December 2004	Episode dated 18 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871570	tvEpisode	Episode dated 20 December 2004	Episode dated 20 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871571	tvEpisode	Episode dated 21 December 2004	Episode dated 21 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871572	tvEpisode	Episode dated 22 December 2004	Episode dated 22 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871573	tvEpisode	Episode dated 23 December 2004	Episode dated 23 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871574	tvEpisode	Episode dated 24 December 2004	Episode dated 24 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871575	tvEpisode	Episode dated 25 December 2004	Episode dated 25 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871576	tvEpisode	Episode dated 27 December 2004	Episode dated 27 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871577	tvEpisode	Episode dated 28 December 2004	Episode dated 28 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871578	tvEpisode	Episode dated 29 December 2004	Episode dated 29 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871579	tvEpisode	Episode dated 30 December 2004	Episode dated 30 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871580	tvEpisode	Episode dated 31 December 2004	Episode dated 31 December 2004	0	2004	\N	\N	Drama,Romance
+tt0871581	tvEpisode	Episode dated 1 January 2005	Episode dated 1 January 2005	0	2005	\N	\N	Drama,Romance
+tt0871582	tvEpisode	Episode dated 3 January 2005	Episode dated 3 January 2005	0	2005	\N	\N	Drama,Romance
+tt0871583	tvEpisode	Episode dated 4 January 2005	Episode dated 4 January 2005	0	2005	\N	\N	Drama,Romance
+tt0871584	tvEpisode	Episode dated 5 January 2005	Episode dated 5 January 2005	0	2005	\N	\N	Drama,Romance
+tt0871585	tvEpisode	Episode dated 6 January 2005	Episode dated 6 January 2005	0	2005	\N	\N	Drama,Romance
+tt0871586	tvEpisode	Episode dated 7 January 2005	Episode dated 7 January 2005	0	2005	\N	\N	Drama,Romance
+tt0871587	tvEpisode	Episode dated 8 January 2005	Episode dated 8 January 2005	0	2005	\N	\N	Drama,Romance
+tt0871588	tvEpisode	Episode #1.1232	Episode #1.1232	0	2006	\N	\N	Drama
+tt0871589	tvEpisode	Episode dated 30 August 2006	Episode dated 30 August 2006	0	2006	\N	\N	News,Talk-Show
+tt0871590	tvEpisode	Echoes: Part 1	Echoes: Part 1	0	1978	\N	\N	Drama
+tt0871591	tvEpisode	The Greenhouse Girls: Part 1	The Greenhouse Girls: Part 1	0	1978	\N	\N	Drama
+tt0871592	tvEpisode	Episode dated 28 September 2006	Episode dated 28 September 2006	0	2006	\N	\N	Talk-Show
+tt0871593	tvEpisode	Round 3	Round 3	0	2006	\N	\N	Family,Game-Show,Music
+tt0871594	tvEpisode	Round 3 Results	Round 3 Results	0	2006	\N	\N	Family,Game-Show,Music
+tt0871595	tvEpisode	Episode #1.7	Episode #1.7	0	2006	\N	\N	Comedy,Talk-Show
+tt0871596	tvEpisode	Episode #1.10410	Episode #1.10410	0	2006	\N	\N	Drama,Romance
+tt0871597	tvEpisode	Episode dated 10 September 2001	Episode dated 10 September 2001	0	2001	\N	\N	\N
+tt0871598	tvEpisode	Episode dated 17 September 2001	Episode dated 17 September 2001	0	2001	\N	\N	\N
+tt0871599	tvEpisode	Episode dated 24 September 2001	Episode dated 24 September 2001	0	2001	\N	\N	\N
+tt0871600	tvEpisode	Episode dated 25 September 2001	Episode dated 25 September 2001	0	2001	\N	\N	\N
+tt0871601	tvEpisode	Episode dated 26 September 2001	Episode dated 26 September 2001	0	2001	\N	\N	\N
+tt0871602	tvEpisode	Episode dated 27 September 2001	Episode dated 27 September 2001	0	2001	\N	\N	\N
+tt0871603	tvEpisode	Episode dated 4 October 2001	Episode dated 4 October 2001	0	2001	\N	\N	\N
+tt0871604	tvSeries	Oi dikaioi	Oi dikaioi	0	1974	1976	\N	Adventure,Crime,Drama
+tt0871606	tvEpisode	Where Are They Now?: Part 1	Where Are They Now?: Part 1	0	2006	\N	\N	Game-Show,Reality-TV
+tt0871607	tvEpisode	Where Are They Now?: Part 2	Where Are They Now?: Part 2	0	2006	\N	\N	Game-Show,Reality-TV
+tt0871608	tvEpisode	Episode dated 22 September 2006	Episode dated 22 September 2006	0	2006	\N	\N	News
+tt0871609	tvEpisode	Ed, Edd n Eddy's Boo Haw Haw	Ed, Edd n Eddy's Boo Haw Haw	0	2005	\N	\N	Animation,Comedy,Family
+tt0871610	tvEpisode	Ed, Edd n Eddy's Hanky Panky Hullabaloo	Ed, Edd n Eddy's Hanky Panky Hullabaloo	0	2005	\N	\N	Animation,Comedy,Family
+tt0871611	tvEpisode	Ed, Edd n Eddy's Jingle Jingle Jangle	Ed, Edd n Eddy's Jingle Jingle Jangle	0	2004	\N	\N	Animation,Comedy,Family
+tt0871612	tvEpisode	The Ed-Touchables/Nagged to Ed	The Ed-Touchables/Nagged to Ed	0	1999	\N	\N	Animation,Comedy,Family
+tt0871613	tvEpisode	Episode #4.21	Episode #4.21	0	2006	\N	\N	Comedy,Talk-Show
+tt0871614	tvEpisode	Episode #4.17	Episode #4.17	0	2006	\N	\N	Comedy,Talk-Show
+tt0871615	tvEpisode	Episode #4.22	Episode #4.22	0	2006	\N	\N	Comedy,Talk-Show
+tt0871616	tvEpisode	Episode #4.23	Episode #4.23	0	2006	\N	\N	Comedy,Talk-Show
+tt0871617	tvEpisode	Episode #4.24	Episode #4.24	0	2006	\N	\N	Comedy,Talk-Show
+tt0871618	tvEpisode	Episode #4.25	Episode #4.25	0	2006	\N	\N	Comedy,Talk-Show
+tt0871619	tvSeries	En buena compañía	En buena compañía	0	2006	\N	\N	Comedy
+tt0871620	tvSeries	Entertainment Today Television	Entertainment Today Television	0	2006	\N	23	News
+tt0871621	tvEpisode	Episode dated 27 September 2006	Episode dated 27 September 2006	0	2006	\N	\N	News
+tt0871622	tvEpisode	Everybody Hates Rejection	Everybody Hates Rejection	0	2006	\N	21	Comedy,Drama,Music
+tt0871623	tvEpisode	Episode dated 17 September 2006	Episode dated 17 September 2006	0	2006	\N	\N	News
+tt0871624	tvEpisode	Episode #1.3394	Episode #1.3394	0	2006	\N	\N	Drama,Family
+tt0871625	tvEpisode	Blake Shelton	Blake Shelton	0	2006	\N	22	Comedy,Music
+tt0871626	tvEpisode	Hank Williams Jr.	Hank Williams Jr.	0	2006	\N	22	Comedy,Music
+tt0871627	tvEpisode	Jack Ingram	Jack Ingram	0	2006	\N	22	Comedy,Music
+tt0871628	tvEpisode	The Warren Brothers	The Warren Brothers	0	2006	\N	22	Comedy,Music
+tt0871629	tvEpisode	Away Game	Away Game	0	2006	\N	21	Comedy,Drama,Romance
+tt0871630	tvEpisode	Episode #1.11098	Episode #1.11098	0	2006	\N	\N	Crime,Drama,Romance
+tt0871631	tvEpisode	Episode #1.11115	Episode #1.11115	0	2006	\N	\N	Crime,Drama,Romance
+tt0871632	tvEpisode	After the Storm	After the Storm	0	2006	\N	\N	Comedy
+tt0871633	tvEpisode	Taxidermy/Barbie	Taxidermy/Barbie	0	2006	\N	\N	Reality-TV
+tt0871634	tvEpisode	Episode #5.10	Episode #5.10	0	2006	\N	\N	Reality-TV
+tt0871635	tvEpisode	Phantom/Zabeel	Phantom/Zabeel	0	2006	\N	\N	Reality-TV
+tt0871636	tvEpisode	Bella/Masons	Bella/Masons	0	2006	\N	\N	Reality-TV
+tt0871637	tvEpisode	Stone Jars/Waihi Cars	Stone Jars/Waihi Cars	0	2006	\N	\N	Reality-TV
+tt0871638	tvEpisode	Venus/Cameras	Venus/Cameras	0	2006	\N	\N	Reality-TV
+tt0871639	tvEpisode	Rabble/Sheepdogs	Rabble/Sheepdogs	0	2006	\N	\N	Reality-TV
+tt0871640	tvEpisode	Coca Cola/Brenkley Trunks	Coca Cola/Brenkley Trunks	0	2006	\N	\N	Reality-TV
+tt0871641	tvEpisode	Pop Culture/Nurse Uniform	Pop Culture/Nurse Uniform	0	2006	\N	\N	Reality-TV
+tt0871642	tvEpisode	Telephones/Folk Art	Telephones/Folk Art	0	2006	\N	\N	Reality-TV
+tt0871643	tvEpisode	Episode #1.15031	Episode #1.15031	0	2006	\N	\N	Drama,Romance
+tt0871644	tvMiniSeries	To gymno koritsi	To gymno koritsi	0	1982	\N	45	Fantasy,Romance
+tt0871645	tvEpisode	Show #584 - Was für ein Traumpaar: Jessica und Michael Stich	Show #584 - Was für ein Traumpaar: Jessica und Michael Stich	0	1999	\N	\N	Comedy,Talk-Show
+tt0871646	tvEpisode	Episode #32.1	Episode #32.1	0	2006	\N	29	Comedy,Game-Show,News
+tt0871647	tvEpisode	Efficiency Secretary	Efficiency Secretary	0	1957	\N	30	Action,Crime,Drama
+tt0871648	tvEpisode	Episode #1.3893	Episode #1.3893	0	2005	\N	28	Drama,Romance
+tt0871649	tvEpisode	Episode dated 28 September 2006	Episode dated 28 September 2006	0	2006	\N	\N	\N
+tt0871650	tvEpisode	Episode #1.22	Episode #1.22	0	1997	\N	\N	Comedy,Sport
+tt0871651	tvEpisode	Finale	Finale	0	2004	\N	\N	Documentary,Musical
+tt0871652	tvEpisode	Episode #1.17	Episode #1.17	0	1995	\N	\N	Comedy
+tt0871653	tvEpisode	Episode #4.1	Episode #4.1	0	2006	\N	\N	Talk-Show
+tt0871654	tvEpisode	Episode #4.10	Episode #4.10	0	2006	\N	\N	Talk-Show
+tt0871655	tvEpisode	Episode #4.11	Episode #4.11	0	2006	\N	\N	Talk-Show
+tt0871656	tvEpisode	Episode #4.12	Episode #4.12	0	2006	\N	\N	Talk-Show
+tt0871657	tvEpisode	Episode #4.13	Episode #4.13	0	2006	\N	\N	Talk-Show
+tt0871658	tvEpisode	Episode #4.14	Episode #4.14	0	2006	\N	\N	Talk-Show
+tt0871659	tvEpisode	Episode #4.15	Episode #4.15	0	2006	\N	\N	Talk-Show
+tt0871660	tvEpisode	Episode #4.2	Episode #4.2	0	2006	\N	\N	Talk-Show
+tt0871661	tvEpisode	Episode #4.3	Episode #4.3	0	2006	\N	\N	Talk-Show
+tt0871662	tvEpisode	Episode #4.4	Episode #4.4	0	2006	\N	\N	Talk-Show
+tt0871663	tvEpisode	Episode #4.5	Episode #4.5	0	2006	\N	\N	Talk-Show
+tt0871664	tvEpisode	Episode #4.6	Episode #4.6	0	2006	\N	\N	Talk-Show
+tt0871665	tvEpisode	Episode #4.7	Episode #4.7	0	2006	\N	\N	Talk-Show
+tt0871666	tvEpisode	Episode #4.8	Episode #4.8	0	2006	\N	\N	Talk-Show
+tt0871667	tvEpisode	Episode #4.9	Episode #4.9	0	2006	\N	\N	Talk-Show
+tt0871668	tvEpisode	Episode #3.1	Episode #3.1	0	2005	\N	\N	Talk-Show
+tt0871669	tvEpisode	Episode #3.6	Episode #3.6	0	2005	\N	\N	Talk-Show
+tt0871670	tvEpisode	Episode #3.7	Episode #3.7	0	2005	\N	\N	Talk-Show
+tt0871671	tvEpisode	Autumn Music Celebration: Part 1	Autumn Music Celebration: Part 1	0	2006	\N	\N	History,News
+tt0871672	tvEpisode	Autumn Music Celebration: Part 2	Autumn Music Celebration: Part 2	0	2006	\N	\N	History,News
+tt0871673	tvEpisode	Mikey Impossible	Mikey Impossible	0	2006	\N	\N	Adventure,Animation,Comedy
+tt0871674	tvEpisode	Saving Face	Saving Face	0	2006	\N	\N	Adventure,Animation,Comedy
+tt0871675	tvEpisode	Ship of Fools	Ship of Fools	0	2006	\N	\N	Adventure,Animation,Comedy
+tt0871676	tvEpisode	The Switch	The Switch	0	2006	\N	\N	Adventure,Animation,Comedy
+tt0871677	tvEpisode	Cecil B. DeMille/Kirk Douglas/Peggy Ann Garner/Nancy Carroll	Cecil B. DeMille/Kirk Douglas/Peggy Ann Garner/Nancy Carroll	0	1952	\N	\N	Comedy,Music
+tt0871678	tvEpisode	Number One with a Bullet	Number One with a Bullet	0	2006	\N	42	Crime,Drama
+tt0871681	tvEpisode	Episode #3.17	Episode #3.17	0	2006	\N	\N	Comedy,Music,Talk-Show
+tt0871682	tvEpisode	Episode #3.19	Episode #3.19	0	2006	\N	\N	Comedy,Music,Talk-Show
+tt0871683	tvEpisode	Episode dated 14 September 2006	Episode dated 14 September 2006	0	2006	\N	\N	Comedy,Talk-Show
+tt0871684	tvEpisode	Episode dated 21 September 2006	Episode dated 21 September 2006	0	2006	\N	\N	Comedy,Talk-Show
+tt0871685	tvEpisode	Episode dated 28 September 2006	Episode dated 28 September 2006	0	2006	\N	\N	Comedy,Talk-Show
+tt0871686	tvEpisode	Episode #14.8	Episode #14.8	0	2006	\N	\N	Comedy,Music,Talk-Show
+tt0871687	tvEpisode	Episode #14.9	Episode #14.9	0	2006	\N	\N	Comedy,Music,Talk-Show
+tt0871688	tvEpisode	Episode #14.20	Episode #14.20	0	2006	\N	\N	Comedy,Music,Talk-Show
+tt0871689	tvEpisode	Episode dated 25 September 2006	Episode dated 25 September 2006	0	2006	\N	\N	Comedy,Music,Talk-Show
+tt0871690	tvEpisode	Episode dated 26 September 2006	Episode dated 26 September 2006	0	2006	\N	\N	Comedy,Music,Talk-Show
+tt0871691	tvEpisode	Episode dated 29 September 2006	Episode dated 29 September 2006	0	2006	\N	\N	Comedy,Music,Talk-Show
+tt0871692	tvEpisode	Episode dated 2 October 2006	Episode dated 2 October 2006	0	2006	\N	\N	Comedy,Music,Talk-Show
+tt0871693	tvEpisode	Episode dated 27 September 2006	Episode dated 27 September 2006	0	2006	\N	\N	Talk-Show
+tt0871694	tvEpisode	Episode dated 2 October 2006	Episode dated 2 October 2006	0	2006	\N	\N	Talk-Show
+tt0871695	tvEpisode	Episode dated 3 October 2006	Episode dated 3 October 2006	0	2006	\N	\N	Talk-Show
+tt0871696	tvEpisode	Episode dated 4 October 2006	Episode dated 4 October 2006	0	2006	\N	\N	Talk-Show
+tt0871697	tvEpisode	Episode dated 5 October 2006	Episode dated 5 October 2006	0	2006	\N	\N	Talk-Show
+tt0871698	tvEpisode	Episode dated 6 October 2006	Episode dated 6 October 2006	0	2006	\N	\N	Talk-Show
+tt0871699	tvEpisode	Episode dated 9 October 2006	Episode dated 9 October 2006	0	2006	\N	\N	Talk-Show
+tt0871700	tvEpisode	Episode dated 10 October 2006	Episode dated 10 October 2006	0	2006	\N	\N	Talk-Show
+tt0871701	tvEpisode	Episode dated 11 October 2006	Episode dated 11 October 2006	0	2006	\N	\N	Talk-Show
+tt0871702	tvEpisode	Episode dated 12 October 2006	Episode dated 12 October 2006	0	2006	\N	\N	Talk-Show
+tt0871703	tvEpisode	Episode dated 28 October 2006	Episode dated 28 October 2006	0	2006	\N	\N	Talk-Show
+tt0871704	tvEpisode	Episode dated 29 September 2006	Episode dated 29 September 2006	0	2006	\N	22	Talk-Show
+tt0871705	tvEpisode	Episode #10.8	Episode #10.8	0	2006	\N	\N	Talk-Show
+tt0871706	tvEpisode	Episode #10.9	Episode #10.9	0	2006	\N	\N	Talk-Show
+tt0871707	tvEpisode	Spanish Laughter	Spanish Laughter	0	1995	\N	45	Drama
+tt0871708	tvEpisode	Episode #1.2	Episode #1.2	0	2006	\N	\N	Comedy,Talk-Show
+tt0871709	tvEpisode	Episode #1.3	Episode #1.3	0	2006	\N	\N	Comedy,Talk-Show
+tt0871710	tvEpisode	Episode #1.4	Episode #1.4	0	2006	\N	\N	Comedy,Talk-Show
+tt0871711	tvEpisode	Episode #1.5	Episode #1.5	0	2006	\N	\N	Comedy,Talk-Show
+tt0871712	tvEpisode	Episode #1.6	Episode #1.6	0	2006	\N	\N	Comedy,Talk-Show
+tt0871713	tvEpisode	Episode #1.7	Episode #1.7	0	2006	\N	\N	Comedy,Talk-Show
+tt0871714	tvEpisode	Episode #1.8	Episode #1.8	0	2006	\N	\N	Comedy,Talk-Show
+tt0871715	tvEpisode	Episode #1.9	Episode #1.9	0	2006	\N	\N	Comedy,Talk-Show
+tt0871716	tvEpisode	Balloons	Balloons	0	1999	\N	\N	Documentary,History
+tt0871717	tvEpisode	Casino Technology	Casino Technology	0	1999	\N	\N	Documentary,History
+tt0871718	tvEpisode	Engineering Disasters 2	Engineering Disasters 2	0	1999	\N	\N	Documentary,History
+tt0871719	tvEpisode	Lost Marvels	Lost Marvels	0	1999	\N	\N	Documentary,History
+tt0871720	tvEpisode	Niagara Power	Niagara Power	0	1999	\N	\N	Documentary,History
+tt0871721	tvEpisode	Blackout	Blackout	0	2003	\N	21	Comedy,Family
+tt0871722	tvEpisode	Drowning New Orleans	Drowning New Orleans	0	2006	\N	\N	Documentary,History
+tt0871723	tvEpisode	Elephant Rage	Elephant Rage	0	2005	\N	\N	Documentary,History
+tt0871724	tvEpisode	Fire Ants: Texas Border Massacre	Fire Ants: Texas Border Massacre	0	2006	\N	\N	Documentary,History
+tt0871725	tvEpisode	Hogzilla	Hogzilla	0	2005	\N	\N	Documentary,History
+tt0871726	tvEpisode	Inside Shock & Awe	Inside Shock & Awe	0	2005	\N	\N	Documentary,History
+tt0871727	tvEpisode	Seeing Through	Seeing Through	0	2005	\N	\N	Drama,Romance
+tt0871728	tvEpisode	Baby Can I Hold You	Baby Can I Hold You	0	2006	\N	23	Comedy,Drama,Romance
+tt0871729	tvEpisode	Episode #2.12	Episode #2.12	0	2006	\N	\N	Comedy,News,Talk-Show
+tt0871730	tvEpisode	'Noche de fiesta' 2001	'Noche de fiesta' 2001	0	2001	\N	\N	Comedy,Music
+tt0871731	tvEpisode	The Skull Sketch Mystery	The Skull Sketch Mystery	0	2006	\N	\N	Crime,Drama,Mystery
+tt0871732	tvEpisode	The Mole	The Mole	0	2006	\N	45	Crime,Drama,Mystery
+tt0871733	tvEpisode	Episode dated 28 August 2006	Episode dated 28 August 2006	0	2006	\N	\N	Talk-Show
+tt0871734	tvEpisode	Episode #1.9770	Episode #1.9770	0	2006	\N	\N	Drama,Romance
+tt0871735	tvEpisode	Janet Jackson	Janet Jackson	0	2006	\N	\N	News,Talk-Show
+tt0871736	tvEpisode	Episode dated 27 September 2006	Episode dated 27 September 2006	0	2006	\N	\N	News,Sport,Talk-Show
+tt0871737	tvEpisode	Beating the System	Beating the System	0	2006	\N	\N	Comedy
+tt0871738	tvEpisode	Odcinek 747	Odcinek 747	0	2006	\N	\N	Drama,Romance
+tt0871739	tvEpisode	533	533	0	2006	\N	\N	Comedy,Drama,Romance
+tt0871740	tvEpisode	534	534	0	2006	\N	\N	Comedy,Drama,Romance
+tt0871741	tvEpisode	(1999-09)	(1999-09)	0	1999	\N	\N	Drama
+tt0871742	tvEpisode	What the Elle?	What the Elle?	0	2006	\N	\N	Game-Show,Reality-TV
+tt0871743	tvEpisode	Episode dated 28 September 2006	Episode dated 28 September 2006	0	2006	\N	\N	Drama,Mystery,Romance
+tt0871744	tvEpisode	White Rose	White Rose	0	2001	\N	\N	Drama,Music,Romance
+tt0871745	tvEpisode	Episode dated 27 September 2006	Episode dated 27 September 2006	0	2006	\N	\N	Sport,Talk-Show
+tt0871746	tvEpisode	Episode dated 27 September 2006	Episode dated 27 September 2006	0	2006	\N	\N	Sport,Talk-Show
+tt0871747	tvSeries	Rumours	Rumours	0	2006	\N	22	Comedy,Drama
+tt0871748	tvEpisode	Episode #1.1346	Episode #1.1346	0	1980	\N	22	Drama,Romance
+tt0871749	tvEpisode	Episode #1.2	Episode #1.2	0	1975	\N	22	Drama,Romance
+tt0871750	tvEpisode	Episode #1.3	Episode #1.3	0	1975	\N	22	Drama,Romance
+tt0871751	tvEpisode	Episode #1.570	Episode #1.570	0	1977	\N	22	Drama,Romance
+tt0871752	tvEpisode	Joe/Dan	Joe/Dan	0	2005	\N	\N	Game-Show,Music,Reality-TV
+tt0871753	tvMiniSeries	Sessiz gece	Sessiz gece	0	2005	2005	\N	Drama

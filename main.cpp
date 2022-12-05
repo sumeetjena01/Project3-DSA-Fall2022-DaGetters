@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 
     IMDBData imdbGetter; // Object
-    imdbGetter.LoadTSVFile("title.basics.tsv");
+    imdbGetter.LoadTSVFile("testload.tsv");
     imdbGetter.PrintMenu();
     return 0;
 }
