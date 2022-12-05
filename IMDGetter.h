@@ -28,6 +28,7 @@ public:
     ~Media(); // Destructor
     bool checkIfAdult();
     static int convertToInt(string str);
+    static bool isAlpha(string str);
 
     // We don't sort by type, right? We only need to sort by title (alphabetically), or year and runTime (numerically). - Sumeet
     // The first question the user asks, already filters out the type of media they're looking for.
