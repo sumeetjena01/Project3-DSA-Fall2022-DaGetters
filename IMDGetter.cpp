@@ -39,12 +39,9 @@ static bool charIsAlpha(char ch) {
 static bool isAlpha(string str) {
 
     // Checking if the movie has an English title.
-    cout << "started alpha\n";
     for(int i = 0; i < str.size(); i++) {
         char ch = str[i];
-        cout << "CH: " << ch << "\n";
         if(!charIsAlpha(ch)) {
-            cout << "failed alpha\n";
             return false;
         }
     }
@@ -182,13 +179,9 @@ void IMDBData::getMediaType(int searchInput, vector<Media*> &mediaTypeList) {
         string titleType = media->titleType;
         if(titleType.compare(searchTitleType) == 0) {// Title Type = Whether it's a movie, show, etc.
             string primaryTitle = media->primaryTitle;
-            cout << "title: " << primaryTitle << "\n";
             if (isAlpha(primaryTitle) && media->runtime > 0 && media->startYear != 0) {
-                cout << "got here\n";
                 mediaTypeList.push_back(media);
-                cout << "pushed back\n";
             }
-            cout << "title: " << primaryTitle << "\n";
 
         }
     }
