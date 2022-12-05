@@ -47,7 +47,6 @@ public:
     bool LoadTSVFile(string filename);
     static Media* CreateMediaData(string line);
     void getMediaType(int searchInput, vector<Media*> &mediaTypeList);
-
     
 private:
     
