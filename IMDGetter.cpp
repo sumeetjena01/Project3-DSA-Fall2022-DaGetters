@@ -31,6 +31,18 @@ bool Media::checkIfAdult () {
 
 }
 
+static bool isAlpha(string str) {
+
+    // Checking if the movie has an English title.
+    for(int i = 0; i < str.size(); i++) {
+        char ch = str[i];
+        if(!isalpha(ch)) {
+            return false;
+        }
+    }
+    return true;
+}
+
 static int convertToInt(string str) {
 
     int i = 0;
@@ -159,8 +171,10 @@ void IMDBData::getMediaType(int searchInput, vector<Media*> &mediaTypeList) {
     for(int i = 0; i < mediaList.size(); i++) {
         Media* media = mediaList[i];
         string titleType = media->titleType;
-        if(titleType.compare(searchTitleType) == 0) { // Title Type = Whether it's a movie, show, etc.
-            mediaTypeList.push_back(media);
+        if(titleType.compare(searchTitleType) == 0) {// Title Type = Whether it's a movie, show, etc.
+            string primaryTitle = media->primaryTitle;
+            if (isAlpha(primaryTitle))
+                mediaTypeList.push_back(media);
         }
     }
 }
