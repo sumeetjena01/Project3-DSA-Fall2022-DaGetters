@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include <algorithm>
+#include <iomanip>
 #include "IMDGetter.h"
 using namespace std;
 
@@ -173,7 +175,7 @@ void IMDBData::getMediaType(int searchInput, vector<Media*> &mediaTypeList) {
         string titleType = media->titleType;
         if(titleType.compare(searchTitleType) == 0) {// Title Type = Whether it's a movie, show, etc.
             string primaryTitle = media->primaryTitle;
-            if (isAlpha(primaryTitle))
+            if (isAlpha(primaryTitle) && media->runtime > 0 && media->startYear != 0)
                 mediaTypeList.push_back(media);
         }
     }
@@ -202,6 +204,8 @@ void IMDBData::printMenu() {
     vector<Media*> allMedia;
     getMediaType(searchInput, allMedia);
     vector<Media*> allMedia2 = allMedia;
+    random_shuffle(allMedia.begin(), allMedia.end());
+    random_shuffle(allMedia2.begin(), allMedia2.end());
     cout << "What would you like to sort by?" << endl;
     cout << "1. Title" << endl; // Alphabetical
     cout << "2. Release Year" << endl;
@@ -219,20 +223,22 @@ void IMDBData::printMenu() {
     //cout << mediaList.size()<<;
     // Call Quick Sort Function
     // Call Binary Insert Sort Function
-    
     if (sortInput == 1) {
         //binary sort allMedia2 here
         quickSortTitle(allMedia, 0, allMedia.size() - 1);
+        binaryInsertionSortStr(allMedia2);
     }
     else if (sortInput == 2) {
         quickSortYear(allMedia, 0, allMedia.size() - 1);
+        binaryInsertionSortInt(allMedia2, true);
     }
     else {
         quickSortRuntime(allMedia, 0, allMedia.size() - 1);
+        binaryInsertionSortInt(allMedia2, false);
     }
-    cout << "\n\nafter sorting: \n";
+    cout << "\n\nAfter sorting: \n";
     for (Media* i : allMedia) {
-        cout << "title:" <<i->primaryTitle<< "   year: " << i->startYear << "    runtime: " <<i->runtime<< "\n" ;
+        cout << "Title: " << i->primaryTitle << setw(35 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n" ;
     }
 
 }
@@ -354,4 +360,54 @@ void IMDBData::swap(vector<Media*> &mediaTypeList, int up, int down) {
     Media* tmp = mediaTypeList[up];
     mediaTypeList[up] = mediaTypeList[down];
     mediaTypeList[down] = tmp;
+}
+
+void IMDBData::binaryInsertionSortInt(vector<Media*>& mediaTypeList, bool isYearSorting)
+{
+    for(int i = 1; i < mediaTypeList.size(); i++)
+    {
+        int index = 0;
+        if(isYearSorting) index = binarySearchInt(mediaTypeList, 0, i - 1, mediaTypeList.at(i)->startYear, isYearSorting);
+        else index = binarySearchInt(mediaTypeList, 0, i - 1, mediaTypeList.at(i)->runtime, isYearSorting);
+        rotate(mediaTypeList.rend() - i - 1, mediaTypeList.rend() - i, mediaTypeList.rend() - index);
+    }
+}
+
+int IMDBData::binarySearchInt(vector<Media*>& mediaTypeList, int low, int high, int target, bool isYearSorting)
+{
+    while(low <= high)
+    {
+        int center = low + (high - low) / 2;
+        int centerElement;
+        if(isYearSorting) centerElement = mediaTypeList.at(center)->startYear;
+        else centerElement = mediaTypeList.at(center)->runtime;
+
+        if(target == centerElement) return ++center;
+        else if(target > centerElement) low = ++center;
+        else high = --center;
+    }
+    return low;
+}
+
+void IMDBData::binaryInsertionSortStr(vector<Media*>& mediaTypeList)
+{
+    for(int i = 1; i < mediaTypeList.size(); i++)
+    {
+        int index = binarySearchStr(mediaTypeList, 0, i - 1, mediaTypeList.at(i)->primaryTitle);
+        rotate(mediaTypeList.rend() - i - 1, mediaTypeList.rend() - i, mediaTypeList.rend() - index);
+    }
+}
+
+int IMDBData::binarySearchStr(vector<Media*>& mediaTypeList, int low, int high, string target)
+{
+    while(low <= high)
+    {
+        int center = low + (high - low) / 2;
+        string centerElement = mediaTypeList.at(center)->primaryTitle;
+
+        if(target == centerElement) return ++center;
+        else if(target > centerElement) low = ++center;
+        else high = --center;
+    }
+    return low;
 }
