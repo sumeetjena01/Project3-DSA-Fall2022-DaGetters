@@ -33,9 +33,11 @@ bool Media::checkIfAdult () {
     return isAdult;
 
 }
+
 static bool charIsAlpha(char ch) {
     return ch >= 0 && ch <= 126;
 }
+
 static bool isAlpha(string str) {
 
     // Checking if the movie has an English title.
