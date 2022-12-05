@@ -183,24 +183,8 @@ void IMDBData::PrintMenu() {
     // When the user selects one of the options, pass all of all the media types from the .TSV file into a vector.
     // But, within that function, if the movie has a 1 in the adult column, do not read that into the vector.
 
-    vector<Media*> movies;
-    vector<Media*> shows;
-    vector<Media*> episodes;
-    vector<Media*> shorts;
-
-    if (searchInput == 1) {
-        getMediaType(searchInput, movies);
-    }
-    else if (searchInput == 2) {
-        getMediaType(searchInput, shows);
-    }
-    else if (searchInput == 3) {
-        getMediaType(searchInput, episodes);
-        // Documentaries are a genre, not a media type, so I had to switch this to TV Episodes.
-    }
-    else if (searchInput == 4) {
-        getMediaType(searchInput, shorts);
-    }
+    vector<Media*> allMedia;
+    getMediaType(searchInput, allMedia);
 
     cout << "What would you like to sort by?" << endl;
     cout << "1. Title" << endl; // Alphabetical
@@ -213,33 +197,7 @@ void IMDBData::PrintMenu() {
         cin >> sortInput;
     }
 
-    cout << "How would you like to perform your search?" << endl;
-    cout << "1. Quick Sort" << endl;
-    cout << "2. Binary Insertion Sort" << endl;
-    int algorithmInput;
-    cin >> algorithmInput;
+    // Call Quick Sort Function
+    // Call Binary Insert Sort Function
 
-    while (algorithmInput == 1) {
-        // Call Quick Sort Function
-        cout << "Quick Sort = Called" << endl;
-        break;
-    }
-    while (algorithmInput == 2) {
-        // Call Binary Insertion Sort Function
-        cout << "Binary Insertion Sort = Called" << endl;
-        break;
-    }
-    while (algorithmInput != 1 && algorithmInput != 2) {
-        // Print error message.
-        cout << "Please enter a valid input. If needed, refer the menu above. " << endl;
-        cin >> algorithmInput;
-        if (algorithmInput == 1) {
-            // Call the Quick Sort function, then comment out the next line.
-            cout << "Quick Sort = Called" << endl;
-        }
-        if (algorithmInput == 2) {
-            // Call the Binary Insertion Sort function, then comment out the next line.
-            cout << "Binary Insertion Sort = Called" << endl;
-        }
-    }
 }
