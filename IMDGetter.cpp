@@ -2,6 +2,7 @@
 #include <fstream>
 #include <algorithm>
 #include <iomanip>
+#include <chrono>
 #include "IMDGetter.h"
 using namespace std;
 
@@ -32,16 +33,22 @@ bool Media::checkIfAdult () {
     return isAdult;
 
 }
-
+static bool charIsAlpha(char ch) {
+    return ch >= 0 && ch <= 126;
+}
 static bool isAlpha(string str) {
 
     // Checking if the movie has an English title.
+    cout << "started alpha\n";
     for(int i = 0; i < str.size(); i++) {
         char ch = str[i];
-        if(!isalpha(ch)) {
+        cout << "CH: " << ch << "\n";
+        if(!charIsAlpha(ch)) {
+            cout << "failed alpha\n";
             return false;
         }
     }
+    cout << "true alpha\n";
     return true;
 }
 
@@ -175,8 +182,14 @@ void IMDBData::getMediaType(int searchInput, vector<Media*> &mediaTypeList) {
         string titleType = media->titleType;
         if(titleType.compare(searchTitleType) == 0) {// Title Type = Whether it's a movie, show, etc.
             string primaryTitle = media->primaryTitle;
-            if (isAlpha(primaryTitle) && media->runtime > 0 && media->startYear != 0)
+            cout << "title: " << primaryTitle << "\n";
+            if (isAlpha(primaryTitle) && media->runtime > 0 && media->startYear != 0) {
+                cout << "got here\n";
                 mediaTypeList.push_back(media);
+                cout << "pushed back\n";
+            }
+            cout << "title: " << primaryTitle << "\n";
+
         }
     }
 }
@@ -222,23 +235,33 @@ void IMDBData::printMenu() {
     //cout << mediaList.size()<<;
     // Call Quick Sort Function
     // Call Binary Insert Sort Function
+    auto beginTime = std::chrono::high_resolution_clock::now(), quickSortTime = std::chrono::high_resolution_clock::now(), binaryInsertTime = std::chrono::high_resolution_clock::now();
     if (sortInput == 1) {
         //binary sort allMedia2 here
         quickSortTitle(allMedia, 0, allMedia.size() - 1);
+        quickSortTime = std::chrono::high_resolution_clock::now();
         binaryInsertionSortStr(allMedia2);
+        binaryInsertTime = std::chrono::high_resolution_clock::now();
     }
     else if (sortInput == 2) {
         quickSortYear(allMedia, 0, allMedia.size() - 1);
+        quickSortTime = std::chrono::high_resolution_clock::now();
         binaryInsertionSortInt(allMedia2, true);
+        binaryInsertTime = std::chrono::high_resolution_clock::now();
     }
     else {
         quickSortRuntime(allMedia, 0, allMedia.size() - 1);
+        quickSortTime = std::chrono::high_resolution_clock::now();
         binaryInsertionSortInt(allMedia2, false);
+        binaryInsertTime = std::chrono::high_resolution_clock::now();
     }
     cout << "\n\nAfter sorting: \n";
     for (Media* i : allMedia) {
-        cout << "Title: " << i->primaryTitle << setw(35 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n" ;
+        cout << "Title: " << i->primaryTitle << setw(35 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n";
     }
+    double quickTimeDiff = chrono::duration_cast<chrono::microseconds>(quickSortTime - beginTime).count();
+    auto binaryTimeDiff = chrono::duration_cast<chrono::microseconds>(binaryInsertTime - beginTime).count();
+    cout << "Sort time difference:  Quick sort took " << quickTimeDiff << " milliseconds, and Binary Insertion Sort took " << binaryTimeDiff << " milliseconds.";
 
 }
 //based quickSort code off Aman powerpoint 6 (Sorting)
