@@ -34,7 +34,7 @@ bool Media::checkIfAdult () {
 
 }
 static bool charIsAlpha(char ch) {
-    return ch >= 0 && ch <= 126;
+    return ch >= 0 && ch <= 168;
 }
 static bool isAlpha(string str) {
 
@@ -45,7 +45,6 @@ static bool isAlpha(string str) {
             return false;
         }
     }
-    cout << "true alpha\n";
     return true;
 }
 
@@ -254,7 +253,7 @@ void IMDBData::printMenu() {
     }
     double quickTimeDiff = chrono::duration_cast<chrono::microseconds>(quickSortTime - beginTime).count();
     auto binaryTimeDiff = chrono::duration_cast<chrono::microseconds>(binaryInsertTime - beginTime).count();
-    cout << "Sort time difference:  Quick sort took " << quickTimeDiff << " milliseconds, and Binary Insertion Sort took " << binaryTimeDiff << " milliseconds.";
+    cout << "\n\nSort time difference:  Quick sort took " << quickTimeDiff << " milliseconds, and Binary Insertion Sort took " << binaryTimeDiff << " milliseconds.";
 
 }
 //based quickSort code off Aman powerpoint 6 (Sorting)
