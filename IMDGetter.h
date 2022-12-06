@@ -42,14 +42,13 @@ public:
     // Functions
     IMDBData(); // Constructor
     ~IMDBData(); // Destructor
-    void checkIfAdult(int input);
     void printMenu();
     bool LoadTSVFile(string filename);
     static Media* CreateMediaData(string line);
     void getMediaType(int searchInput, vector<Media*> &mediaTypeList);
-    
+
 private:
-    
+
     void swap(vector<Media*> &mediaTypeList, int up, int down);
     void quickSortYear(vector<Media*> &mediaTypeList, int low, int high);
     int partitionYear(vector<Media*> &mediaTypeList, int low, int high);
@@ -61,5 +60,5 @@ private:
     int binarySearchInt(vector<Media*>& mediaTypeList, int low, int high, int target, bool isYearSorting);
     void binaryInsertionSortStr(vector<Media*>& mediaTypeList);
     int binarySearchStr(vector<Media*>& mediaTypeList, int low, int high, string target);
-    
+
 };
