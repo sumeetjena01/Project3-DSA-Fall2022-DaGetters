@@ -256,7 +256,7 @@ void IMDBData::printMenu() {
         cout << "Title: " << i->primaryTitle << setw(35 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n";
     }
     double quickTimeDiff = chrono::duration_cast<chrono::microseconds>(quickSortTime - beginTime).count();
-    auto binaryTimeDiff = chrono::duration_cast<chrono::microseconds>(binaryInsertTime - beginTime).count();
+    double binaryTimeDiff = chrono::duration_cast<chrono::microseconds>(binaryInsertTime - quickSortTime).count();
     cout << "Final Time Difference:  Quick Sort took " << quickTimeDiff << " microseconds, and Binary Insertion Sort took " << binaryTimeDiff << " microseconds.";
 
 }
