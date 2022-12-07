@@ -1,0 +1,1 @@
+If you want to run this code, download the .tsv file "title.basics.tsv" from IMDb (also linked in our Google Docs submission). Then, place it in the correct location for YOUR file system. If you are using Mac and CLion, that is in the cmake-build-debug folder. From then on, just run the program as you normally would. Have fun! 
