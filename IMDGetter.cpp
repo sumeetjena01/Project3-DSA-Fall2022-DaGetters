@@ -220,40 +220,61 @@ void IMDBData::printMenu() {
         cin >> sortInput;
     }
 
-    cout << "How would you like to perform your search?" << endl;
+    cout << "Which sort would you like to display the results of?" << endl;
     cout << "1. Quick Sort" << endl;
     cout << "2. Binary Insertion Sort" << endl;
 
     int algorithmInput;
     cin >> algorithmInput;
 
-    auto beginTime = std::chrono::high_resolution_clock::now();
-    auto quickSortTime = std::chrono::high_resolution_clock::now();
-    auto binaryInsertTime = std::chrono::high_resolution_clock::now();
-    double quickTimeDiff = chrono::duration_cast<chrono::nanoseconds>(quickSortTime - beginTime).count();
-    double binaryTimeDiff = chrono::duration_cast<chrono::nanoseconds>(binaryInsertTime - beginTime).count();
+    std::chrono::high_resolution_clock::time_point beginTime = std::chrono::high_resolution_clock::now();
+    std::chrono::high_resolution_clock::time_point quickSortTime;
+    std::chrono::high_resolution_clock::time_point binaryInsertTime; 
 
+    
     while (algorithmInput == 1) {
         // Call Quick Sort Function
         quickSortTitle(allMedia, 0, allMedia.size() - 1);
         // cout << "Quick Sort = Called" << endl;
-        cout << "\nFinal Results: \n";
-        for (Media* i : allMedia) {
-            cout << "Title: " << i->primaryTitle << setw(35 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n";
-        }
-        cout << "Final Time Difference:  Quick Sort took " << quickTimeDiff << " nanoseconds. " << endl;
-        break;
-    }
-    while (algorithmInput == 2) {
-        // Call Binary Insertion Sort Function
-        binaryInsertionSortStr(allMedia2);
-        // cout << "Binary Insertion Sort = Called" << endl;
+        quickSortTime = std::chrono::high_resolution_clock::now();
+        double quickTimeDiff = chrono::duration_cast<chrono::microseconds>(quickSortTime - beginTime).count();
         cout << "\nFinal Results: \n";
         for (Media* i : allMedia) {
             cout << "Title: " << i->primaryTitle << setw(35 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n";
         }
         cout << endl;
-        cout << "Final Time Difference: Binary Insertion Sort took " << binaryTimeDiff << " nanoseconds. " << endl;
+        beginTime = std::chrono::high_resolution_clock::now();
+        binaryInsertionSortStr(allMedia2);
+        binaryInsertTime = std::chrono::high_resolution_clock::now();
+
+        double binaryTimeDiff = chrono::duration_cast<chrono::microseconds>(binaryInsertTime - beginTime).count();
+        bool quickFast = quickTimeDiff - binaryTimeDiff < 0;
+        float sortTimeDiff = (quickFast) ? ((quickTimeDiff - binaryTimeDiff) * -1) : (quickTimeDiff - binaryTimeDiff);
+
+        cout << "Final Time Difference: Quick Sort took " << quickTimeDiff << " microseconds, and Binary Insertion sort took " << binaryTimeDiff << " microseconds, so quickSort was " << (sortTimeDiff) << ((quickFast)?(" microseconds faster"):(" microseconds slower"))<<" than Binary Insertion sort"<<endl;
+        break;
+    }
+    while (algorithmInput == 2) {
+        // Call Binary Insertion Sort Function
+        binaryInsertionSortStr(allMedia2);
+        binaryInsertTime = std::chrono::high_resolution_clock::now();
+        double binaryTimeDiff = chrono::duration_cast<chrono::microseconds>(binaryInsertTime - beginTime).count();
+        // cout << "Binary Insertion Sort = Called" << endl;
+        cout << "\nFinal Results: \n";
+        for (Media* i : allMedia2) {
+            cout << "Title: " << i->primaryTitle << setw(35 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n";
+        }
+        cout << endl;
+        beginTime = std::chrono::high_resolution_clock::now();
+        quickSortTitle(allMedia, 0, allMedia.size() - 1);
+        quickSortTime = std::chrono::high_resolution_clock::now();
+
+        double quickTimeDiff = chrono::duration_cast<chrono::microseconds>(quickSortTime - beginTime).count();
+        bool quickFast = quickTimeDiff - binaryTimeDiff < 0;
+        float sortTimeDiff = (quickFast) ? ((quickTimeDiff - binaryTimeDiff) * -1) : (quickTimeDiff - binaryTimeDiff);
+
+
+        cout << "Final Time Difference: Quick Sort took " << quickTimeDiff << " microseconds, and Binary Insertion sort took " << binaryTimeDiff << " microseconds, so Binary Insertion Sort was " << (sortTimeDiff) << ((quickFast) ? (" microseconds slower") : (" microseconds faster")) << " than Quick sort" << endl;
         break;
     }
 
@@ -380,50 +401,62 @@ void IMDBData::swap(vector<Media*> &mediaTypeList, int up, int down) {
 
 }
 
+static void shiftArray(vector<Media*>& arr, int i, int index) {
+    Media* tmp = arr[i];
+    for (int j = i - 1; j >= index; j--) {
+        arr[j + 1] = arr[j];
+
+    }
+    arr[index] = tmp;
+}
 void IMDBData::binaryInsertionSortInt(vector<Media*>& mediaTypeList, bool isYearSorting)
 {
-    for(int i = 1; i < mediaTypeList.size(); i++)
+    for (int i = 1; i < mediaTypeList.size(); i++)
     {
         int index = 0;
-        if(isYearSorting) index = binarySearchInt(mediaTypeList, 0, i - 1, mediaTypeList.at(i)->startYear, isYearSorting);
+        if (isYearSorting) index = binarySearchInt(mediaTypeList, 0, i - 1, mediaTypeList.at(i)->startYear, isYearSorting);
         else index = binarySearchInt(mediaTypeList, 0, i - 1, mediaTypeList.at(i)->runtime, isYearSorting);
-        rotate(mediaTypeList.rend() - i - 1, mediaTypeList.rend() - i, mediaTypeList.rend() - index);
+        //rotate(mediaTypeList.rend() - i - 1, mediaTypeList.rend() - i, mediaTypeList.rend() - index);
+        shiftArray(mediaTypeList, i, index);
     }
 }
 
 int IMDBData::binarySearchInt(vector<Media*>& mediaTypeList, int low, int high, int target, bool isYearSorting) {
-    while(low <= high)
+    while (low <= high)
     {
         int center = low + (high - low) / 2;
         int centerElement;
-        if(isYearSorting) centerElement = mediaTypeList.at(center)->startYear;
+        if (isYearSorting) centerElement = mediaTypeList.at(center)->startYear;
         else centerElement = mediaTypeList.at(center)->runtime;
 
-        if(target == centerElement) return ++center;
-        else if(target > centerElement) low = ++center;
+        if (target == centerElement) return ++center;
+        else if (target > centerElement) low = ++center;
         else high = --center;
     }
     return low;
 }
 
 void IMDBData::binaryInsertionSortStr(vector<Media*>& mediaTypeList) {
-    for(int i = 1; i < mediaTypeList.size(); i++)
+    for (int i = 1; i < mediaTypeList.size(); i++)
     {
         int index = binarySearchStr(mediaTypeList, 0, i - 1, mediaTypeList.at(i)->primaryTitle);
-        rotate(mediaTypeList.rend() - i - 1, mediaTypeList.rend() - i, mediaTypeList.rend() - index);
+        //rotate(mediaTypeList.rend() - i - 1, mediaTypeList.rend() - i, mediaTypeList.rend() - index);
+        shiftArray(mediaTypeList, i, index);
+
     }
 }
 
 int IMDBData::binarySearchStr(vector<Media*>& mediaTypeList, int low, int high, string target) {
 
-    while(low <= high)
+    while (low <= high)
     {
         int center = low + (high - low) / 2;
         string centerElement = mediaTypeList.at(center)->primaryTitle;
 
-        if(target == centerElement) return ++center;
-        else if(target > centerElement) low = ++center;
+        if (target == centerElement) return ++center;
+        else if (target > centerElement) low = ++center;
         else high = --center;
     }
     return low;
 }
+
