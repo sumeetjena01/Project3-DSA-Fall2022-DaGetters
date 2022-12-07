@@ -174,7 +174,7 @@ void IMDBData::getMediaType(int searchInput, vector<Media*> &mediaTypeList) {
         string titleType = media->titleType;
         if(titleType.compare(searchTitleType) == 0) {// Title Type = Whether it's a movie, show, etc.
             string primaryTitle = media->primaryTitle;
-            if (isAlpha(primaryTitle) && media->runtime > 0 && media->startYear != 0) {
+            if (isAlpha(primaryTitle) && media->runtime > 0 && media->startYear != 0 && !media->isAdult) {
                 mediaTypeList.push_back(media);
             }
 
@@ -205,12 +205,11 @@ void IMDBData::printMenu() {
 
     vector<Media*> allMedia;
     getMediaType(searchInput, allMedia);
-    shuffle(allMedia.begin(), allMedia.end(), std::mt19937(std::random_device()()));
-    vector<Media*> allMedia2 = allMedia;
     cout << "What would you like to sort by?" << endl;
     cout << "1. Title" << endl; // Alphabetical
     cout << "2. Release Year" << endl;
     cout << "3. Runtime" << endl;
+
     int sortInput;
     cin >> sortInput;
     fstream timeFile;
@@ -219,6 +218,17 @@ void IMDBData::printMenu() {
         cout << "Please enter a valid input. If needed, refer the menu above. " << endl;
         cin >> sortInput;
     }
+
+    int isShuffled;
+    cout << "Would you like the data to be shuffled before sorting?" << endl;
+    cout << "1. Yes" << endl;
+    cout << "2. No" << endl;
+    cin >> isShuffled;
+    if(isShuffled == 2 && sortInput == 1) quickSortTitle(allMedia, 0, allMedia.size() - 1);
+    if(isShuffled == 2 && sortInput == 2) quickSortYear(allMedia, 0, allMedia.size() - 1);
+    if(isShuffled == 2 && sortInput == 3) quickSortRuntime(allMedia, 0, allMedia.size() - 1);
+
+    vector<Media*> allMedia2 = allMedia;
 
     cout << "Which sort would you like to display the results of?" << endl;
     cout << "1. Quick Sort" << endl;
@@ -229,20 +239,16 @@ void IMDBData::printMenu() {
 
     std::chrono::high_resolution_clock::time_point beginTime = std::chrono::high_resolution_clock::now();
     std::chrono::high_resolution_clock::time_point quickSortTime;
-    std::chrono::high_resolution_clock::time_point binaryInsertTime; 
+    std::chrono::high_resolution_clock::time_point binaryInsertTime;
 
-    
-    while (algorithmInput == 1) {
+
+    if(sortInput == 1) {
         // Call Quick Sort Function
         quickSortTitle(allMedia, 0, allMedia.size() - 1);
         // cout << "Quick Sort = Called" << endl;
         quickSortTime = std::chrono::high_resolution_clock::now();
         double quickTimeDiff = chrono::duration_cast<chrono::microseconds>(quickSortTime - beginTime).count();
-        cout << "\nFinal Results: \n";
-        for (Media* i : allMedia) {
-            cout << "Title: " << i->primaryTitle << setw(35 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n";
-        }
-        cout << endl;
+
         beginTime = std::chrono::high_resolution_clock::now();
         binaryInsertionSortStr(allMedia2);
         binaryInsertTime = std::chrono::high_resolution_clock::now();
@@ -250,32 +256,66 @@ void IMDBData::printMenu() {
         double binaryTimeDiff = chrono::duration_cast<chrono::microseconds>(binaryInsertTime - beginTime).count();
         bool quickFast = quickTimeDiff - binaryTimeDiff < 0;
         float sortTimeDiff = (quickFast) ? ((quickTimeDiff - binaryTimeDiff) * -1) : (quickTimeDiff - binaryTimeDiff);
+
+        cout << "\nFinal Results: \n";
+        auto printMedia = allMedia;
+        if(algorithmInput == 2) printMedia = allMedia2;
+        for (Media* i : printMedia) {
+            cout << "Title: " << i->primaryTitle << setw(90 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n";
+        }
+        cout << endl;
 
         cout << "Final Time Difference: Quick Sort took " << quickTimeDiff << " microseconds, and Binary Insertion sort took " << binaryTimeDiff << " microseconds, so quickSort was " << (sortTimeDiff) << ((quickFast)?(" microseconds faster"):(" microseconds slower"))<<" than Binary Insertion sort"<<endl;
-        break;
     }
-    while (algorithmInput == 2) {
-        // Call Binary Insertion Sort Function
-        binaryInsertionSortStr(allMedia2);
-        binaryInsertTime = std::chrono::high_resolution_clock::now();
-        double binaryTimeDiff = chrono::duration_cast<chrono::microseconds>(binaryInsertTime - beginTime).count();
-        // cout << "Binary Insertion Sort = Called" << endl;
-        cout << "\nFinal Results: \n";
-        for (Media* i : allMedia2) {
-            cout << "Title: " << i->primaryTitle << setw(35 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n";
-        }
-        cout << endl;
-        beginTime = std::chrono::high_resolution_clock::now();
-        quickSortTitle(allMedia, 0, allMedia.size() - 1);
+    else if(sortInput == 2) {
+        // Call Quick Sort Function
+        quickSortRuntime(allMedia, 0, allMedia.size() - 1);
+        // cout << "Quick Sort = Called" << endl;
         quickSortTime = std::chrono::high_resolution_clock::now();
-
         double quickTimeDiff = chrono::duration_cast<chrono::microseconds>(quickSortTime - beginTime).count();
+
+        beginTime = std::chrono::high_resolution_clock::now();
+        binaryInsertionSortInt(allMedia2, true);
+        binaryInsertTime = std::chrono::high_resolution_clock::now();
+
+        double binaryTimeDiff = chrono::duration_cast<chrono::microseconds>(binaryInsertTime - beginTime).count();
         bool quickFast = quickTimeDiff - binaryTimeDiff < 0;
         float sortTimeDiff = (quickFast) ? ((quickTimeDiff - binaryTimeDiff) * -1) : (quickTimeDiff - binaryTimeDiff);
 
+        cout << "\nFinal Results: \n";
+        auto printMedia = allMedia;
+        if(algorithmInput == 2) printMedia = allMedia2;
+        for (Media* i : printMedia) {
+            cout << "Title: " << i->primaryTitle << setw(90 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n";
+        }
+        cout << endl;
 
-        cout << "Final Time Difference: Quick Sort took " << quickTimeDiff << " microseconds, and Binary Insertion sort took " << binaryTimeDiff << " microseconds, so Binary Insertion Sort was " << (sortTimeDiff) << ((quickFast) ? (" microseconds slower") : (" microseconds faster")) << " than Quick sort" << endl;
-        break;
+        cout << "Final Time Difference: Quick Sort took " << quickTimeDiff << " microseconds, and Binary Insertion sort took " << binaryTimeDiff << " microseconds, so quickSort was " << (sortTimeDiff) << ((quickFast)?(" microseconds faster"):(" microseconds slower"))<<" than Binary Insertion sort"<<endl;
+    }
+    else if(sortInput == 3) {
+        // Call Quick Sort Function
+        quickSortYear(allMedia, 0, allMedia.size() - 1);
+        // cout << "Quick Sort = Called" << endl;
+        quickSortTime = std::chrono::high_resolution_clock::now();
+        double quickTimeDiff = chrono::duration_cast<chrono::microseconds>(quickSortTime - beginTime).count();
+
+        beginTime = std::chrono::high_resolution_clock::now();
+        binaryInsertionSortInt(allMedia2, false);
+        binaryInsertTime = std::chrono::high_resolution_clock::now();
+
+        double binaryTimeDiff = chrono::duration_cast<chrono::microseconds>(binaryInsertTime - beginTime).count();
+        bool quickFast = quickTimeDiff - binaryTimeDiff < 0;
+        float sortTimeDiff = (quickFast) ? ((quickTimeDiff - binaryTimeDiff) * -1) : (quickTimeDiff - binaryTimeDiff);
+
+        cout << "\nFinal Results: \n";
+        auto printMedia = allMedia;
+        if(algorithmInput == 2) printMedia = allMedia2;
+        for (Media* i : printMedia) {
+            cout << "Title: " << i->primaryTitle << setw(90 - i->primaryTitle.size()) << "Year: " << i->startYear << setw(20) << "Runtime: " << i->runtime << "\n";
+        }
+        cout << endl;
+
+        cout << "Final Time Difference: Quick Sort took " << quickTimeDiff << " microseconds, and Binary Insertion sort took " << binaryTimeDiff << " microseconds, so quickSort was " << (sortTimeDiff) << ((quickFast)?(" microseconds faster"):(" microseconds slower"))<<" than Binary Insertion sort"<<endl;
     }
 
 }
@@ -459,4 +499,3 @@ int IMDBData::binarySearchStr(vector<Media*>& mediaTypeList, int low, int high, 
     }
     return low;
 }
-
